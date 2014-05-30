@@ -9,7 +9,7 @@
   {% endif %}
 
   {% assign normal = page.images[image_index].url %}
-  {% assign mobile = page.images[image_index].url-mobile %}
+  {% assign mobile = page.images[image_index].url | replace: '.png', '-small.png' %}
 
 {% else %}
 
