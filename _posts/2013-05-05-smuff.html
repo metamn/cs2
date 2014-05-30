@@ -1,0 +1,185 @@
+---
+layout: portfolio
+title: Smuff
+type: e-commerce
+services:
+  - Logo
+  - Responsive web design
+  - Front-end development
+  - Back-end development
+  - E-commerce
+technologies:
+  - Wordpress
+  - Yii
+  - PHP
+  - HTML5
+  - CSS3
+  - jQuery
+  - SASS
+  - Compass
+categories:
+  - e-commerce
+  - Logo
+  - Responsive web design
+  - Front-end development
+  - Back-end development
+  - Wordpress
+  - Yii
+  - PHP
+  - HTML5
+  - CSS3
+  - jQuery
+  - SASS
+  - Compass
+images:
+  - url: /assets/images/smuff-logo.png
+    url-mobile: /assets/images/smuff-logo.png
+    title: Smuff
+  - url: /assets/images/smuff-logo.png
+    url-mobile: /assets/images/smuff-logo.png
+    title: desktop
+  - url: /assets/images/smuff-smartphone-naked.png
+    url-mobile: /assets/images/smuff-smartphone-naked.png
+    title: The Smuff frontpage on mobiles
+  - url: /assets/images/smuff-smartphone-1-naked.png
+    url-mobile: /assets/images/smuff-smartphone-1-naked.png
+    title: The Smuff category page on mobiles
+    random: true
+  - url: /assets/images/smuff-tablet-naked.png
+    url-mobile: /assets/images/smuff-tablet-naked.png
+    title: The single product page on tablets
+  - url: /assets/images/smuff-desktop-1.png
+    url-mobile: /assets/images/smuff-desktop-1-naked.png
+    title: The frontpage on desktops & laptops
+  - url: /assets/images/smuff-desktop-2.png
+    url-mobile: /assets/images/smuff-desktop-2-naked.png
+    title: The one page checkout at Smuff
+---
+
+
+<article class="intro">
+  <h3>Smuff</h3>
+  
+  <p>
+    <a href="http://smuff.ro" title="Smuff">Smuff</a> is a simple and elegant e-commerce website designed to convert visitors into customers.
+  </p>
+  <p>
+    And yes we've managed to make <mark>44%</mark> of customers coming back.
+  </p>
+</article>
+
+
+<article class="image smartphone left">
+  <h3>Frontpage on smartphone</h3>
+  
+  {% assign image_index = 2 %}
+  {% include responsive-images.html type='from post' link="" %}
+  
+  <aside>
+    <p>
+      <span>Despite</span> working with Smuff since 2006 the fully responsive version of their website come alive in 2013.
+    </p>
+    <p>
+      The previous version rolled out in 2010 was fully mobile compatible but not <em>responsive.</em> The look was similar but the content was less on mobiles than desktops.
+    </p>
+    
+    <p>
+      Since Smuff had no mobile app yet we've designed the website first for mobile then enhanced up to bigger displays.
+    </p>
+  </aside>
+</article>
+
+
+<article class="image smartphone right">
+  <h3>Products page on smartphone</h3>
+  
+  {% assign image_index = 3 %}
+  {% include responsive-images.html type='from post' link="" %}
+  
+  <aside>
+    <p>
+      <span>To make</span> the website perfectly aligned we've employed content discipline.
+    </p>
+    
+    <p>
+      Product thumbnails, title and short descriptions have exactly defined dimensions. This way the product grid looks uniform on all devices.
+    </p>
+    
+    <p>
+      Better the content more awesome the design.
+    </p>
+  </aside>
+</article>
+
+
+<article class="image tablet left">
+  <h3>Single product page on tablet</h3>
+  
+  {% assign image_index = 4 %}
+  {% include responsive-images.html type='from post' link="" %}
+  
+  <aside>
+    <p>
+      We've realized early we are selling first of all images, <em>and</em>, according to Google Analytics product pages take 70% of all visits.
+    </p>
+    
+    <p>
+      These findings combined together made to design a product page which displays the biggest product images possible and still leave a room for thumbnail navigation to present the product from different point of views.
+    </p>
+  </aside>
+</article>
+
+
+<article class="image desktop">
+  <h3>Frontpage on desktop</h3>
+  
+  {% assign image_index = 5 %}
+  {% include responsive-images.html type='from post' link="" %}
+  
+  <aside>
+    <p>
+      We knew Smuff products are techy / geeky / cool and make people feel happy. And let the design stand out of the way by elevating the product thumbnail as the most important design element. 
+    </p>
+    
+    <p>
+      The redesigned logo reflects the geekness of the site and that single orange color enhances the hapiness.
+    </p>
+  </aside>
+</article>
+
+
+<article class="image desktop">
+  <h3>Checkout page on desktop</h3>
+  
+  {% assign image_index = 6 %}
+  {% include responsive-images.html type='from post' link="" %}
+  
+  <aside>
+    <p>
+      We've put major focus on designing the checkout page.
+      Studies show vistors drop shopping most likely at this last stage. 
+    </p>
+    
+    <p>
+      We've managed to create a single page checkout where returning users are <em>one click away from purchase</em>, and, new users have just a single additional step, the registration. Which is either a click on "Connect with Facebeook" or filling four fileds in a form. Without leaving the checkout screen.
+    </p>
+  </aside>
+</article>
+
+
+
+<article class="logo">
+  <h3>The logo</h3>
+  
+  {% assign image_index = 1 %}
+  {% include responsive-images.html type='from post' link="" %}
+</article>
+
+
+{% include smuff-logo.html %}
+
+
+{% include services.html %}
+
+
+

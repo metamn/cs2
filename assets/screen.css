@@ -1,0 +1,377 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.0.alpha.17/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.0.alpha.17/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.0.alpha.17/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.0.alpha.17/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.0.alpha.17/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.0.alpha.17/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.0.alpha.17/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.0.alpha.17/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.0.alpha.17/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 22, grid.scss */
+body {
+  font-size: 100%;
+  line-height: 1.25;
+}
+
+@media only screen and (max-width: 47.999em) {
+  /* line 54, grid.scss */
+  body {
+    font-size: 87.5%;
+    line-height: 1.25;
+  }
+}
+@media only screen and (min-width: 90.001em) {
+  /* line 62, grid.scss */
+  body {
+    font-size: 150%;
+    line-height: 1.25;
+  }
+}
+/* line 79, grid.scss */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 6, visual-grid.scss */
+#gravity .h-vertical, #gravity .h-horizontal, #gravity .h-golden-rectangle {
+  position: fixed;
+  z-index: 1000;
+  opacity: .3;
+}
+/* line 12, visual-grid.scss */
+#gravity .h-vertical {
+  left: calc(50% - 1px);
+  height: 100%;
+  border-left: 1px solid red;
+}
+/* line 18, visual-grid.scss */
+#gravity .h-horizontal {
+  top: calc(50% - 1px);
+  width: 100%;
+  border-bottom: 1px solid red;
+}
+/* line 24, visual-grid.scss */
+#gravity .h-golden-rectangle {
+  border: 1px solid green;
+  opacity: .8;
+}
+/* line 29, visual-grid.scss */
+#gravity .h-gravity-point {
+  position: absolute;
+  z-index: 1000;
+  opacity: .3;
+  display: none;
+}
+/* line 34, visual-grid.scss */
+#gravity .h-gravity-point:after {
+  content: '';
+  display: block;
+  width: 1.25em;
+  height: 1.25em;
+  background: red;
+  position: relative;
+  top: -0.625em;
+  left: -0.625em;
+}
+/* line 46, visual-grid.scss */
+#gravity .h-gravity-point:last-of-type {
+  display: block;
+}
+
+/* line 57, visual-grid.scss */
+#grid {
+  position: absolute;
+  top: 0;
+  opacity: .1;
+  z-index: -1;
+}
+
+/* line 64, visual-grid.scss */
+#grid .col {
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+  width: calc(5.20833em + 1.25em - 1px);
+  height: calc(5em + 1.25em - 1px);
+  float: left;
+}
+
+/* line 72, visual-grid.scss */
+#grid .gutter-right {
+  float: right;
+  border-left: 1px solid;
+  width: calc(1.25em - 1px);
+  height: 100%;
+}
+
+/* line 79, visual-grid.scss */
+#grid .gutter-bottom {
+  float: left;
+  border-bottom: 1px solid;
+  height: calc(1.25em - 1px);
+  width: 100%;
+}
+
+/* line 15, typography.scss */
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+/* line 19, typography.scss */
+body p + p, body p + figure, body ol + figure, body figure + p {
+  margin-top: 1.25em;
+}
+/* line 23, typography.scss */
+body figure + figure {
+  margin-top: 2.5em;
+}
+/* line 27, typography.scss */
+body figure a:hover {
+  border: none !important;
+}
+/* line 31, typography.scss */
+body figcaption {
+  text-align: center;
+  font-style: italic;
+  font-size: smaller;
+}
+/* line 35, typography.scss */
+body ol {
+  list-style-type: decimal;
+}
+/* line 39, typography.scss */
+body .separator {
+  width: 100%;
+  float: left;
+  margin-bottom: 1.25em;
+}
+
+/* line 50, typography.scss */
+h1, h2, h3, h4 {
+  font-family: 'Old Standard TT', serif;
+  font-size: larger;
+}
+
+/* line 56, typography.scss */
+h4 {
+  margin-top: 1.25em;
+}
+
+/* line 60, typography.scss */
+h3 {
+  margin-top: 2.5em;
+  margin-bottom: 1.25em;
+}
+
+/* line 65, typography.scss */
+h2 {
+  margin-top: 3.75em;
+  margin-bottom: 2.5em;
+}
+
+/* line 70, typography.scss */
+h1 {
+  margin-top: 3.75em;
+  margin-bottom: 2.5em;
+  font-weight: bold;
+}
+
+/* line 17, screen.scss */
+html body {
+  color: #3a3a3a;
+  background: #f9f9f9;
+}
+/* line 16, colors.scss */
+html body a {
+  color: #a08158;
+  background: #f9f9f9;
+  text-decoration: none;
+}
+/* line 20, colors.scss */
+html body a:hover {
+  border-bottom: 1px solid;
+}
+/* line 21, screen.scss */
+html body #grid {
+  display: none;
+}
+/* line 24, screen.scss */
+html body #gravity {
+  display: none;
+}
+/* line 28, screen.scss */
+html body .container {
+  position: relative;
+  left: 50%;
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  padding: 1.25em;
+}
+/* line 32, screen.scss */
+html body .container header .container, html body .container #about .container, html body .container footer .container {
+  max-width: 24.58333em;
+}
+/* line 37, screen.scss */
+html body .container header {
+  height: 6.25em;
+}
+/* line 16, colors.scss */
+html body .container header a {
+  color: #795555;
+  background: #f9f9f9;
+  text-decoration: none;
+}
+/* line 20, colors.scss */
+html body .container header a:hover {
+  border-bottom: 1px solid;
+}
+/* line 41, screen.scss */
+html body .container header h4 {
+  font-style: italic;
+  font-family: 'Old Standard TT', serif;
+}
+/* line 45, screen.scss */
+html body .container header p {
+  font-size: smaller;
+}
+/* line 50, screen.scss */
+html body .container #about {
+  height: 12.5em;
+}
+/* line 53, screen.scss */
+html body .container #about h3 {
+  display: none;
+}
+/* line 59, screen.scss */
+html body .container footer .container {
+  margin: 5em 0;
+}
+/* line 62, screen.scss */
+html body .container footer .container p {
+  text-align: center;
+  border: 1px solid #dfdfdf;
+  padding: 0.625em 1.25em;
+  box-shadow: 1px 0 #dfdfdf, 0 1px #dfdfdf, 2px 1px #dfdfdf, 1px 2px #dfdfdf, 3px 2px #dfdfdf, 2px 3px #dfdfdf, 4px 3px #dfdfdf, 3px 4px #dfdfdf, 5px 4px #dfdfdf, 4px 5px #dfdfdf;
+}
+/* line 16, colors.scss */
+html body .container footer .container p a {
+  color: #3a3a3a;
+  background: #f9f9f9;
+  text-decoration: none;
+}
+/* line 20, colors.scss */
+html body .container footer .container p a:hover {
+  border-bottom: 1px solid;
+}
+/* line 71, screen.scss */
+html body .container footer .container p span {
+  font-style: italic;
+  font-family: 'Old Standard TT', serif;
+  font-size: larger;
+}
+/* line 82, screen.scss */
+html body.frontpage main .container {
+  max-width: 36.875em;
+}
+@media only screen and (max-width: 47.999em) {
+  /* line 82, screen.scss */
+  html body.frontpage main .container {
+    margin-top: 5em;
+  }
+}
+/* line 89, screen.scss */
+html body.frontpage main .container article {
+  margin-bottom: 1.25em;
+}
+/* line 92, screen.scss */
+html body.frontpage main .container article h1, html body.frontpage main .container article figcaption {
+  display: none;
+}
+/* line 96, screen.scss */
+html body.frontpage main .container article .category {
+  text-align: center;
+  font-style: italic;
+  font-size: smaller;
+}
+/* line 108, screen.scss */
+html body.article header .container, html body.portfolio header .container {
+  max-width: 36.875em;
+}
+/* line 113, screen.scss */
+html body.article main .container, html body.portfolio main .container {
+  max-width: 36.875em;
+  border-bottom: 1px solid #dfdfdf;
+  padding-bottom: 5em;
+  margin-bottom: 5em;
+}
+/* line 125, screen.scss */
+html body.portfolio main figure {
+  margin-bottom: 1.25em;
+}
+/* line 128, screen.scss */
+html body.portfolio main figure figcaption {
+  text-align: left;
+}

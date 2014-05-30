@@ -1,0 +1,136 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "compass/css3";
+
+@import "colors";
+@import "grid";
+@import "visual-grid";
+
+
+@import "typography";
+
+html {
+  body {
+    @include color;
+    @include link;
+    
+    #grid {
+      display: none;
+    }
+    #gravity {
+      display: none;
+    }
+    
+    .container {
+      @include container;
+      
+      header, #about, footer {
+        .container {
+          max-width: $text-grid-width;
+        }
+      }
+      
+      header {
+        @include rows(1);
+        @include link($title);
+        
+        h4 {
+          @include title;
+        }
+        
+        p {
+          font-size: smaller;
+        }
+      }
+      
+      #about {
+        @include rows(2);
+        
+        h3 {
+          display: none;
+        }
+      }
+      
+      footer {
+        .container {
+          margin: $grid-height 0;
+          
+          p {
+            text-align: center;
+            border: 1px solid $grey;
+            padding: $gutter/2 $gutter;
+            
+            box-shadow: 1px 0 $grey, 0 1px $grey, 2px 1px $grey, 1px 2px $grey, 3px 2px $grey, 2px 3px $grey, 4px 3px $grey, 3px 4px $grey, 5px 4px $grey, 4px 5px $grey;
+            
+            @include link($color);
+            
+            span {
+              @include title;
+              font-size: larger;
+            }
+          }
+        }
+      }
+    }
+  
+    &.frontpage {
+      main {
+        .container {;
+          max-width: $text-grid-width + $text-grid-width / 2;
+          
+          @include mobile {
+            margin-top: $grid-height;
+          }
+          
+          article {
+            margin-bottom: $gutter;
+            
+            h1, figcaption {
+              display: none;
+            }
+            
+            .category {
+              @include figcaption;
+            }
+          }
+        }
+      }
+    }
+    
+    
+    
+    &.article, &.portfolio {
+      header {
+        .container {
+          max-width: $text-grid-width + $text-grid-width / 2;
+        }
+      }
+      main {
+        .container {
+          max-width: $text-grid-width + $text-grid-width / 2;
+          border-bottom: 1px solid $grey;
+          padding-bottom: $grid-height;
+          margin-bottom: $grid-height;
+        }
+      }
+    }
+    
+    
+    &.portfolio {
+      main {
+        figure {
+          margin-bottom: $gutter;
+          
+          figcaption {
+            text-align: left;
+          }
+        }
+      }
+    }
+  
+  }
+}
