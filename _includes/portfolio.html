@@ -1,0 +1,4 @@
+{% for post in site.posts %}
+  {% assign klass = post.title | downcase | replace:' ', '-'  %}
+  {% include portfolio-thumb.html %}
+{% endfor %}
