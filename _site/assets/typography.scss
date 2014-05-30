@@ -1,0 +1,74 @@
+
+@mixin title {
+  font-style: italic;
+  font-family: 'Old Standard TT', serif;
+}
+
+
+@mixin figcaption {
+  text-align: center;
+  font-style: italic;
+  font-size: smaller;
+}
+
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  
+  p + p, p + figure, ol + figure, figure + p {
+    margin-top: $gutter;
+  }
+  
+  figure + figure {
+    margin-top: $gutter * 2;  
+  }
+  
+  figure a:hover {
+    border: none !important;
+  }
+  
+  figcaption {
+    @include figcaption;
+  }
+  
+  ol {
+    list-style-type: decimal;
+  }
+  
+  .separator {
+    @include block;
+    margin-bottom: $gutter;
+  }
+  
+}
+
+
+
+
+
+h1, h2, h3, h4 {
+  font-family: 'Old Standard TT', serif;
+  font-size: larger;
+}
+  
+
+h4 {
+  margin-top: $gutter;
+}
+
+h3 {
+  margin-top: $gutter * 2;
+  margin-bottom: $gutter;
+}
+
+h2 {
+  margin-top: $gutter * 3;
+  margin-bottom: $gutter * 2;
+}
+
+h1 {
+  margin-top: $gutter * 3;
+  margin-bottom: $gutter * 2;
+  font-weight: bold;
+}

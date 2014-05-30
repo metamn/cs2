@@ -1,0 +1,60 @@
+{% if include.type %}
+
+  {% assign title = page.images[image_index].title %}
+  
+  {% if include.link %} 
+    {% assign link = include.link %}
+  {% else %}
+    {% assign link = page.url %}
+  {% endif %}
+
+  {% if include.link-from-image %}
+    {% assign link = page.images[image_index].link %}
+  {% endif %}
+
+  {% assign normal = page.images[image_index].url %}
+  {% assign mobile = page.images[image_index].url-mobile %}
+
+{% else %}
+
+  {% assign title = include.title %}
+  {% assign link = include.link %}
+  
+  {% capture normal %}
+    {{ include.normal }}
+  {% endcapture %}
+
+  {% capture mobile %}
+    {{ include.mobile }}
+  {% endcapture %}
+
+{% endif %}
+
+
+<figure>
+  {% if link != "" %}
+    <a href="{{ site.url }}{{ link }}" title="{{ title }}">
+  {% endif %}
+
+  <div data-picture data-alt="{{ title }}">
+    <div data-src="{{ site.url }}{{ normal }}"></div>
+    <div data-src="{{ site.url }}{{ mobile }}" data-media="(max-width: 768px)"></div>
+    <noscript>
+      <img src="{{ site.url }}{{ normal }}" alt="{{ title }}">
+    </noscript>
+  </div>
+    
+  {% if link != '' %}
+    </a>
+  {% endif %}
+  
+  <figcaption>
+    {% if link != "" %}
+      <a href="{{ site.url }}{{ link }}" title="{{ title }}">
+    {% endif %}
+    {{ title }}
+    {% if link != '' %}
+      </a>
+    {% endif %}
+  </figcaption>
+</figure>

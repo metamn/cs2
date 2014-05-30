@@ -1,0 +1,15 @@
+<a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">
+  <article class="{{ klass }}">
+    {% assign page = post %}
+    {% assign image_index = 0 %}
+    {% include responsive-images.html type='from post' link="" %}
+    
+    <h1>
+      {{ post.title }}
+    </h1>
+    
+    <div class="category">
+      {{ post.type }}
+    </div>
+  </article>
+</a>
