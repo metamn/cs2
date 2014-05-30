@@ -59,12 +59,15 @@ html body.frontpage main .container article h1, html body.frontpage main .contai
 html body.frontpage main .container article .category { text-align: center; font-style: italic; font-size: smaller; }
 html body.article header, html body.article main, html body.portfolio header, html body.portfolio main { width: 100%; float: left; }
 html body.article header .container, html body.article main .container, html body.portfolio header .container, html body.portfolio main .container { max-width: 36.875em; padding: 0; }
-html body.article main p + p, html body.article main p + figure, html body.article main ol + figure, html body.article main figure + p, html body.portfolio main p + p, html body.portfolio main p + figure, html body.portfolio main ol + figure, html body.portfolio main figure + p { margin-top: 1.25em; }
+html body.article main p + p, html body.article main p + figure, html body.article main ol + figure, html body.article main figure + p, html body.article main table + p, html body.portfolio main p + p, html body.portfolio main p + figure, html body.portfolio main ol + figure, html body.portfolio main figure + p, html body.portfolio main table + p { margin-top: 1.25em; }
 html body.article main figure + figure, html body.portfolio main figure + figure { margin-top: 2.5em; }
 html body.article main figure a:hover, html body.portfolio main figure a:hover { border: none !important; }
 html body.article main figcaption, html body.portfolio main figcaption { text-align: center; font-style: italic; font-size: smaller; }
 html body.article main ol, html body.portfolio main ol { list-style-type: decimal; }
-html body.article main .separator, html body.portfolio main .separator { width: 100%; float: left; margin-bottom: 1.25em; }
+html body.article main .spacer, html body.portfolio main .spacer { width: 100%; float: left; margin-bottom: 1.25em; }
+html body.article main blockquote, html body.portfolio main blockquote { margin: 1.25em 0; padding: 1.25em; border: 1px solid #dfdfdf; width: calc(100% - 2.5em - 2px); }
+html body.article main table, html body.portfolio main table { width: 100%; display: table !important; }
+html body.article main table thead th, html body.article main table tbody td, html body.portfolio main table thead th, html body.portfolio main table tbody td { padding: 0.625em; padding-left: 0; border-bottom: 1px solid #dfdfdf; }
 html body.article main mark, html body.portfolio main mark { color: #f9f9f9; background: #faafaf; padding: 0.15625em 0.3125em; }
 html body.article #about .container, html body.portfolio #about .container { border-top: 1px solid #dfdfdf; padding-top: 5em; margin-top: 5em; }
 html body.portfolio main article { width: 100%; float: left; }
