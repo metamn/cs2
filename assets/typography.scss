@@ -74,7 +74,7 @@ h1 {
   }
   
   mark {
-    background: #FAAFAF;
-    color: $background;
+    @include color($background, $highlight);
+    padding: $gutter/8 $gutter/4;
   }
 }

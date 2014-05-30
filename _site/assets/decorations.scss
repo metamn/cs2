@@ -1,9 +1,14 @@
 @mixin portfolio-item {
-  figure {
-    margin-bottom: $gutter;
+  article {
+    @include block;
     
-    figcaption {
-      text-align: left;
+    figure {
+      @include block;
+      margin-bottom: $gutter;
+      
+      figcaption {
+        text-align: left;
+      }
     }
   }
 }
@@ -56,9 +61,9 @@
 
 
 @mixin separator {
-  border-bottom: 1px solid $grey;
-  padding-bottom: $grid-height;
-  margin-bottom: $grid-height;
+  border-top: 1px solid $grey;
+  padding-top: $grid-height;
+  margin-top: $grid-height;
 }
 
 

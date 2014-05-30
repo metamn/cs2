@@ -67,8 +67,11 @@ $breakpoint-large-screen: 90em; // 1440px
 
 // 2. Grid mixins
 @mixin column($width: $text-grid-width) {
+  @include block;
+  
   .container {
     max-width: $width;
+    padding: 0;
   }
 }
 
