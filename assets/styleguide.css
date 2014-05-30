@@ -1,0 +1,160 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
+
+html { line-height: 1; }
+
+ol, ul { list-style: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+caption, th, td { text-align: left; font-weight: normal; vertical-align: middle; }
+
+q, blockquote { quotes: none; }
+q:before, q:after, blockquote:before, blockquote:after { content: ""; content: none; }
+
+a img { border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary { display: block; }
+
+html body { width: 90%; margin: 0 auto; float: none; background: white; color: #404040; font-size: 100%; line-height: 1.25; font-family: 'Inconsolata'; }
+html body a { color: #404040; text-decoration: none; font-weight: bold; }
+html body a:active, html body a:visited { color: #333333; }
+html body a:hover { color: #A67764; }
+html body h1, html body h2, html body h3, html body h4, html body h5, html body h6 { font-size: 1.75em; padding-top: 1.51785em; }
+html body h2 { font-variant: small-caps; }
+html body h3 { font-style: italic; }
+html body p + p { margin-top: 0.625em; }
+html body section > h3, html body nav > h3, html body aside > h3 { display: none; }
+html body header, html body main, html body footer, html body section, html body nav, html body aside, html body article { width: 100%; float: left; }
+html body main, html body footer { margin: 2.5em 0; }
+html body img { max-width: 100%; width: auto; height: auto; }
+html body.article main { font-family: 'Old Standard TT', serif; margin-top: 0; font-size: large; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; }
+html body.article main article { max-width: 700px; margin: 2.5em auto; float: none; line-height: 1.5; border-right: 1px solid #ccc; padding-right: 3.75em; border-left: 1px solid #ccc; padding-left: 3.75em; }
+html body.article main article h1, html body.article main article h2, html body.article main article h3 { font-size: 1.5em; font-style: normal; font-variant: normal; margin-top: 1.25em; padding-top: 0; }
+html body.article main article h1:first-of-type { margin-top: 0; }
+html body.article main article p, html body.article main article ol, html body.article main article table, html body.article main article figure, html body.article main article blockquote { margin-left: 1.25em; }
+html body.article main article ol { list-style-type: decimal; margin-left: 2.5em; }
+html body.article main article ul { list-style-type: square; margin-left: 2.5em; }
+html body.article main article figure { margin-top: 0.625em; }
+html body.article main article figure figcaption { color: #666; font-variant: small-caps; font-size: small; letter-spacing: 1.2px; }
+html body.article main article figure.border img { border: 1px solid #ccc; }
+html body.article main article figure + figure { margin-top: 2.5em; }
+html body.article main article figure + p, html body.article main article ol + p, html body.article main article ul + p, html body.article main article p + ul { margin-top: 0.625em; }
+html body.article main article p.separator { margin-top: 2.5em; }
+html body.article main article table { margin-top: 1.25em; margin-bottom: 1.25em; width: 100%; display: table !important; }
+html body.article main article table caption { font-style: italic; margin-bottom: 0.3125em; }
+html body.article main article table thead { background: #ccc; }
+html body.article main article table thead th, html body.article main article table tbody td { padding: 0.625em; padding-left: 0; }
+html body.article main article table thead th:first-of-type, html body.article main article table tbody td:first-of-type { padding-left: 1px; }
+html body.article main article table tbody td { border-bottom: 1px solid #ccc; }
+html body.article main article blockquote { margin-top: 1.25em; margin-bottom: 1.25em; border: 1px solid; padding: 1.25em; }
+html body.article main article blockquote + p.blockquote-source { position: relative; float: right; top: -3.75em; right: 0.3125em; font-variant: small-caps; font-size: small; letter-spacing: 1.2px; }
+html body.portfolio main article > h3 { display: none; }
+html body.portfolio main article aside { display: none; }
+html body.portfolio main article.logo { margin: 2.5em; max-width: 15em; float: left; }
+html body.portfolio main article.logo .artwork, html body.portfolio main article.logo p { width: 100%; float: left; }
+html body.portfolio main article.logo p { display: none; }
+html body.portfolio main article.logo figure, html body.portfolio main article.logo div { max-width: 15em; }
+html body.portfolio main article.logo figure figcaption, html body.portfolio main article.logo div figcaption { display: none; }
+html body.portfolio main article.smartphone figure, html body.portfolio main article.tablet figure { display: inline-block; background: #000; border: 1px solid #cccccc; border-color: #cccccc; box-shadow: 1px 0 #cccccc, 0 1px #cccccc, 2px 1px #cccccc, 1px 2px #cccccc, 3px 2px #cccccc, 2px 3px #cccccc, 4px 3px #cccccc, 3px 4px #cccccc, 5px 4px #404040, 4px 5px #404040; -moz-border-radius: 1.25em; -webkit-border-radius: 1.25em; border-radius: 1.25em; padding: 0.3125em 0.15625em; }
+html body.portfolio main article.smartphone figure img, html body.portfolio main article.tablet figure img { margin: 1.25em 0.625em 2.5em; border: 1px solid #cccccc; width: calc(100% - 1.25em); }
+html body.portfolio main article.smartphone figure figcaption, html body.portfolio main article.tablet figure figcaption { display: none; }
+html body.portfolio main article.image { margin-bottom: 1.25em; }
+html body.portfolio main article.smartphone { max-width: 15em; float: left; margin-right: 2.5em; }
+html body.portfolio main article.tablet { max-width: 25em; float: left; margin-right: 2.5em; }
+html body.portfolio main article.landscape { max-width: 45em; float: left; margin-right: 2.5em; }
+html body.portfolio main article.desktop { width: 45em; float: left; }
+html body.portfolio main article.desktop figure figcaption { text-align: center; }
+html body.portfolio main article.intro, html body.portfolio main article.services, html body.portfolio main article.next { display: none; }
+html body.portfolio main .story { margin: 5em; margin-right: 0; float: right; width: 6.25em; display: inline-block; cursor: pointer; }
+html body.portfolio main .story img { width: 32px; }
+html body.portfolio main .similar-projects, html body.portfolio main .thumbs, html body.portfolio main .logo-animated { display: none; }
+html body.portfolio.story span.story { display: none; }
+html body.portfolio.story main article { max-width: 100%; margin: 0 0 3.75em; }
+html body.portfolio.story main article figure { max-width: 25%; float: left; }
+html body.portfolio.story main article figure figcaption { display: block; text-align: center; padding-bottom: 1.25em; color: #ccc; }
+html body.portfolio.story main article aside { display: block; font-family: 'Old Standard TT', serif; font-size: 150%; padding-top: 2.5em; width: 65%; max-width: 700px; float: left; }
+html body.portfolio.story main article aside .services { display: block; }
+html body.portfolio.story main article aside em { font-style: italic; }
+html body.portfolio.story main article aside p:first-of-type:before { content: ''; border-top: 1px solid; margin-bottom: 1.25em; display: block; width: 5em; position: relative; }
+html body.portfolio.story main article.left aside { margin-left: 9%; }
+html body.portfolio.story main article.right aside { margin-right: 9%; }
+html body.portfolio.story main article.right figure { position: relative; top: -3.75em; }
+html body.portfolio.story main article.tablet figure { max-width: 45%; }
+html body.portfolio.story main article.tablet aside { width: 45%; }
+html body.portfolio.story main article.desktop { width: 80%; margin-left: 10%; margin-right: 10%; }
+html body.portfolio.story main article.desktop figure { max-width: 100%; }
+html body.portfolio.story main article.desktop aside { width: 60%; margin-left: 20%; margin-right: 20%; }
+html body.portfolio.story main article.intro { display: block; }
+html body.portfolio.story main article.intro.services { display: block; }
+html body.portfolio.story main article.logo-animated { display: block; font-family: 'Old Standard TT', serif; font-size: larger; }
+html body.portfolio.story main article.logo-animated .artwork { padding-right: 2.5em; margin-right: 2.5em; border-right: 1px solid; }
+html body.portfolio.story main article.services { display: block; margin-top: 2.5em; font-family: 'Old Standard TT', serif; font-size: larger; }
+html body.portfolio.story main article.services dl { line-height: 1.75; }
+html body.portfolio.story main article.services dl dt { text-decoration: underline; }
+html body.portfolio.story main article.services dl dd + dt { margin-top: 1.25em; }
+html body.portfolio.story main article.logo { display: none; }
+html body.portfolio .navigation-portfolio { width: 25em; position: relative; right: 1.25em; float: right; top: 6.25em; }
+html body.portfolio .navigation-portfolio ul { float: right; }
+html body.portfolio .navigation-portfolio ul li { display: inline-block; float: left; margin-right: 1.25em; }
+html body.portfolio .navigation-portfolio ul li:last-of-type { margin-right: 0; }
+html body.portfolio .navigation-portfolio ul li:first-of-type { display: none; }
+html body.portfolio .navigation-portfolio ul li:first-of-type:before { content: '\2794'; display: inline-block; font-size: 250%; -moz-transform: rotate(180deg); -ms-transform: rotate(180deg); -o-transform: rotate(180deg); -webkit-transform: rotate(180deg); transform: rotate(180deg); color: #ccc; }
+html body.portfolio .navigation-portfolio ul li:last-of-type:after { content: '\2794'; display: inline-block; font-size: 250%; }
+html body.default footer { font-size: large; }
+html body main .thumbs a { width: 30%; margin-right: 3%; margin-bottom: 5%; float: left; height: 12.5em; }
+html body main .thumbs a article figure { height: 12.5em; visibility: hidden; }
+html body main .thumbs a article h1 { display: none; }
+html body main .thumbs a article .category { position: relative; top: 1.25em; }
+html body header nav span { display: none; padding: 0.3125em 0.625em; background: #404040; text-align: center; -moz-transform: rotate(-90deg); -ms-transform: rotate(-90deg); -o-transform: rotate(-90deg); -webkit-transform: rotate(-90deg); transform: rotate(-90deg); position: absolute; top: 0; left: 0; cursor: pointer; }
+html body.sticky header nav span { position: fixed; color: white; }
+html body footer nav { margin-top: 1.25em; }
+html body footer nav ul li { display: inline-block; float: left; margin-right: 1.25em; }
+html body footer nav ul li:last-of-type { margin-right: 0; }
+html body footer nav ul img { width: 32px; }
+
+html body.styleguide section { width: 100%; float: left; }
+html body.styleguide section div { width: 100%; float: left; }
+
+.sg-default-spacing .sg-example p + p { margin-top: 0.625em; }
+
+.sg-font-body .sg-example { font-family: 'Inconsolata'; }
+
+.sg-headings .sg-example h1, .sg-headings .sg-example h2, .sg-headings .sg-example h3, .sg-headings .sg-example h4, .sg-headings .sg-example h5, .sg-headings .sg-example h6 { font-size: 1.75em; padding-top: 1.51785em; }
+.sg-headings .sg-example h2 { font-variant: small-caps; }
+.sg-headings .sg-example h3 { font-style: italic; }
+
+.sg-heading-size .sg-example h1 { font-size: 1.75em; padding: 1.51785em 0 0; }
+
+.sg-basic-typography { font-size: 100%; line-height: 1.25; }
+
+.sg-font-size .sg-example { font-size: 100%; line-height: 1.25; }
+.sg-font-size .sg-example div { margin-top: 1.25em; }
+
+.sg-list-inline ul li { display: inline-block; float: left; margin-right: 1.25em; }
+.sg-list-inline ul li:last-of-type { margin-right: 0; }
+
+.sg-block .sg-example { background: #404040; }
+.sg-block .sg-example div { background: white; width: 100%; float: left; }
+
+.sg-fluid-grid .sg-example > * { width: auto; float: left; margin-right: 1.25em; display: inline-block; }
+
+.sg-hide-title .sg-example > h3 { display: none; }
+
+.sg-container .sg-example { background: #404040; }
+.sg-container .sg-example div { background: white; width: 90%; margin: 0 auto; float: none; }
+
+.sg-basic-colors { background: white; color: #404040; }
+.sg-basic-colors a { color: #404040; text-decoration: none; font-weight: bold; }
+.sg-basic-colors a:active, .sg-basic-colors a:visited { color: #333333; }
+.sg-basic-colors a:hover { color: #A67764; }
+
+.sg-link a { color: #404040; text-decoration: none; font-weight: bold; }
+.sg-link a:active, .sg-link a:visited { color: #333333; }
+.sg-link a:hover { color: #A67764; }
+
+.sg-colors ul li { width: 10em; }
+.sg-colors ul li span { display: block; width: 10em; height: 10em; border: 1px solid; }
+.sg-colors ul li:nth-of-type(1) span { background: #404040; }
+.sg-colors ul li:nth-of-type(2) span { background: white; }
+.sg-colors ul li:nth-of-type(3) span { background: #404040; }
+.sg-colors ul li:nth-of-type(4) span { background: #333333; }

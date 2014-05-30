@@ -1,0 +1,8 @@
+@mixin basic-colors {
+  background: $background;
+  color: $color;
+  
+  a {
+    @include link;
+  }
+}

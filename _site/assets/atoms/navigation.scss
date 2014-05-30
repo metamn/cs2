@@ -1,0 +1,11 @@
+@mixin list-inline($margin: $pad) {
+  li {
+    display: inline-block;
+    float: left;
+    margin-right: $margin;
+    
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}

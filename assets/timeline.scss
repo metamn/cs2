@@ -1,0 +1,23 @@
+@import "screen";
+
+html {
+  body.project-timeline {
+    section {
+      @include block;
+      margin: $pad*2 0;
+      
+      @include show-title;
+      
+      date {
+        @include block;
+        padding: $pad/4;
+        margin-bottom: $pad/2;
+        @include color(invert);
+      }
+      
+      div {
+        @include text-long;
+      }
+    }
+  }
+}

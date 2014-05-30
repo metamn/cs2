@@ -1,0 +1,28 @@
+desc "Deploy to gh-pages"
+task :deploy do
+  puts "\## Deploying to gh-pages"
+  
+  puts "\### Copying _site to tmp/"
+  status = system("cp -Rf _site/* ~/tmp/_site")
+  puts status ? "Success" : "Failed"
+  
+  puts "\### Checking out gh-pages"
+  status = system("gichk gh-pages")
+  puts status ? "Success" : "Failed"
+  
+  puts "\### Removing old files (except the .git/ folder)"
+  status = system("ls | grep -v '.git' | xargs rm -Rf")
+  puts status ? "Success" : "Failed"
+  
+  puts "\### Copying ~/tmp/_site into gh-pages"
+  status = system("cp -Rf ~/tmp/_site* .")
+  puts status ? "Success" : "Failed"
+  
+  puts "\### Pushing back changes to github"
+  status = system("gis | gia | gia -u | gic 'Deploying ...'")
+  puts status ? "Success" : "Failed"
+  
+  puts "\### Deploying"
+  status = system("gipop")
+  puts status ? "Success" : "Failed"
+end
