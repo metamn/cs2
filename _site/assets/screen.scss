@@ -19,8 +19,12 @@ html {
     .container {
       @include container;
       
-      header, #about {
+      header, #about, #contact {
         @include column;
+      }
+      
+      #about, #contact {
+        @include hide-title;
       }
       
       header {
@@ -30,7 +34,6 @@ html {
       
       #about {
         @include rows(2);
-        @include hide-title;
       }
       
       #contact {

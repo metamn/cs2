@@ -37,16 +37,16 @@ html body a { color: #ac7c68; background: #f9f9f9; text-decoration: none; }
 html body a:hover { border-bottom: 1px solid; }
 html body p + p { margin-top: 1.25em; }
 html body .container { position: relative; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); padding: 1.25em; }
-html body .container header .container, html body .container #about .container { max-width: 24.58333em; }
+html body .container header .container, html body .container #about .container, html body .container #contact .container { max-width: 24.58333em; }
+html body .container #about .container > h3, html body .container #contact .container > h3 { display: none; }
 html body .container header { height: 6.25em; }
 html body .container header a { color: #795555; background: #f9f9f9; text-decoration: none; }
 html body .container header a:hover { border-bottom: 1px solid; }
 html body .container header h4 { font-style: italic; font-family: 'Old Standard TT', serif; }
 html body .container header p { font-size: smaller; }
 html body .container #about { height: 12.5em; }
-html body .container #about .container > h3 { display: none; }
 html body .container #contact .container { margin: 5em 0; }
-html body .container #contact .container p { text-align: center; border: 1px solid #dfdfdf; padding: 0.625em 1.25em; box-shadow: 1px 0 #dfdfdf, 0 1px #dfdfdf, 2px 1px #dfdfdf, 1px 2px #dfdfdf, 3px 2px #dfdfdf, 2px 3px #dfdfdf, 4px 3px #dfdfdf, 3px 4px #dfdfdf, 5px 4px #dfdfdf, 4px 5px #dfdfdf; }
+html body .container #contact .container p { text-align: center; border: 1px solid #dfdfdf; padding: 0.625em 1.25em; box-shadow: 1px 0 #dfdfdf, 0 1px #dfdfdf, 2px 1px #dfdfdf, 1px 2px #dfdfdf, 3px 2px #dfdfdf, 2px 3px #dfdfdf, 4px 3px #dfdfdf, 3px 4px #dfdfdf, 5px 4px #dfdfdf, 4px 5px #dfdfdf; width: calc(100% - 2.5em - 24px); }
 html body .container #contact .container p a { color: #3a3a3a; background: #f9f9f9; text-decoration: none; }
 html body .container #contact .container p a:hover { border-bottom: 1px solid; }
 html body .container #contact .container p span { font-style: italic; font-family: 'Old Standard TT', serif; font-size: larger; }
