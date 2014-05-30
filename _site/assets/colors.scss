@@ -1,10 +1,13 @@
+// These colors are derived from $background
 $background: #f9f9f9;
 $color: #3A3A3A;
 $grey: #DFDFDF;
-
 $title: #795555;
-$highlight: #A08158;
-$action: #A05859;
+$highlight: #FAAFAF;
+
+// These colors are derived from $title
+$link: #AC7C68;
+
 
 
 @mixin color($c: $color, $b: $background) {
@@ -12,7 +15,7 @@ $action: #A05859;
   background: $b;
 }
 
-@mixin link($c: $highlight, $b: $background) {
+@mixin link($c: $link, $b: $background) {
   a {
     @include color($c, $b);
     text-decoration: none;

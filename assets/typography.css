@@ -1,23 +1,12 @@
 /*
 Syntax error: Undefined variable: "$gutter".
-        on line 20 of /home/cs/work/tg2/assets/typography.scss
+        on line 7 of /home/cs/work/cs6/assets/typography.scss
 
 Backtrace:
-/home/cs/work/tg2/assets/typography.scss:20
+/home/cs/work/cs6/assets/typography.scss:7
 /var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/script/tree/variable.rb:49:in `_perform'
 /var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/script/tree/node.rb:50:in `perform'
 /var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/tree/visitors/perform.rb:366:in `visit_prop'
-/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/tree/visitors/base.rb:36:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
-/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/stack.rb:79:in `block in with_base'
-/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/stack.rb:115:in `with_frame'
-/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/stack.rb:79:in `with_base'
-/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/tree/visitors/perform.rb:152:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/tree/visitors/perform.rb:389:in `block (2 levels) in visit_rule'
-/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/tree/visitors/perform.rb:389:in `map'
-/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/tree/visitors/perform.rb:389:in `block in visit_rule'
-/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/tree/visitors/perform.rb:173:in `with_environment'
-/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/tree/visitors/perform.rb:387:in `visit_rule'
 /var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/tree/visitors/base.rb:36:in `visit'
 /var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
 /var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/stack.rb:79:in `block in with_base'
@@ -49,9 +38,6 @@ Backtrace:
 /var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/tree/root_node.rb:36:in `css_tree'
 /var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/tree/root_node.rb:20:in `render'
 /var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/engine.rb:274:in `render'
-/var/lib/gems/1.9.1/gems/compass-import-once-1.0.2/lib/compass/import-once/engine.rb:17:in `block in render'
-/var/lib/gems/1.9.1/gems/compass-import-once-1.0.2/lib/compass/import-once/engine.rb:29:in `with_import_scope'
-/var/lib/gems/1.9.1/gems/compass-import-once-1.0.2/lib/compass/import-once/engine.rb:16:in `render'
 /var/lib/gems/1.9.1/gems/compass-1.0.0.alpha.18/lib/compass/compiler.rb:171:in `block (2 levels) in compile'
 /var/lib/gems/1.9.1/gems/compass-1.0.0.alpha.18/lib/compass/compiler.rb:153:in `timed'
 /var/lib/gems/1.9.1/gems/compass-1.0.0.alpha.18/lib/compass/compiler.rb:166:in `block in compile'
@@ -83,4 +69,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$gutter\".\A         on line 20 of /home/cs/work/tg2/assets/typography.scss"; }
+  content: "Syntax error: Undefined variable: \"$gutter\".\A         on line 7 of /home/cs/work/cs6/assets/typography.scss"; }

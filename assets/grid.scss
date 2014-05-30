@@ -65,8 +65,26 @@ $breakpoint-large-screen: 90em; // 1440px
 }
 
 
+// 2. Grid mixins
+@mixin column($width: $text-grid-width) {
+  .container {
+    max-width: $width;
+  }
+}
+
+@mixin rows($nr) {
+  height: row($nr);
+}
+
+@function row($nr) {
+  @return $nr * ($grid-height + $gutter);
+}
 
 
+
+
+// Common mixins
+// -----------------------------------------------
 
 @mixin container {
   position: relative;
@@ -75,6 +93,16 @@ $breakpoint-large-screen: 90em; // 1440px
   padding: $gutter;
 }
 
+@mixin block {
+  width: 100%;
+  float: left;
+}
+
+@mixin hide-title {
+  .container > h3 {
+    display: none;
+  }
+}
 
 img {
   max-width: 100%;
@@ -82,41 +110,6 @@ img {
 }
 
 
-@mixin block {
-  width: 100%;
-  float: left;
-}
 
 
-
-@mixin columns($nr, $responsive: false) {
-  @if ($responsive == false) {
-    width: col($nr);
-  } @else {
-    width: 100%;
-    max-width: col($nr);
-  }
-  
-  margin-right: $gutter;
-  float: left;
-}
-
-@mixin rows($nr) {
-  height: row($nr);
-}
-
-
-
-
-@function col($nr) {
-  @if ($nr == 1) {
-    @return $grid-width + $gutter;
-  } @else {
-    @return $nr * $grid-width + ($nr - 1) * $gutter;    
-  }
-}
-
-@function row($nr) {
-  @return $nr * ($grid-height + $gutter);
-}
 

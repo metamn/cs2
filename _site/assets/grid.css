@@ -1,25 +1,5 @@
-/* line 22, grid.scss */
-body {
-  font-size: 100%;
-  line-height: 1.25;
-}
+body { font-size: 100%; line-height: 1.25; }
 
-@media only screen and (max-width: 47.999em) {
-  /* line 54, grid.scss */
-  body {
-    font-size: 87.5%;
-    line-height: 1.25;
-  }
-}
-@media only screen and (min-width: 90.001em) {
-  /* line 62, grid.scss */
-  body {
-    font-size: 150%;
-    line-height: 1.25;
-  }
-}
-/* line 79, grid.scss */
-img {
-  max-width: 100%;
-  height: auto;
-}
+@media only screen and (max-width: 47.999em) { body { font-size: 87.5%; line-height: 1.25; } }
+@media only screen and (min-width: 90.001em) { body { font-size: 150%; line-height: 1.25; } }
+img { max-width: 100%; height: auto; }
