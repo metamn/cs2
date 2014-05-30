@@ -52,7 +52,7 @@ html body .container #contact .container p a:hover { border-bottom: 1px solid; }
 html body .container #contact .container p span { font-style: italic; font-family: 'Old Standard TT', serif; font-size: larger; }
 html body.frontpage main .container { max-width: 36.875em; }
 @media only screen and (max-width: 47.999em) { html body.frontpage main .container { margin-top: 5em; } }
-html body.frontpage main .container article { margin-bottom: 1.25em; }
+html body.frontpage main .container article { margin-bottom: 1.25em; text-align: center; }
 html body.frontpage main .container article h1, html body.frontpage main .container article figcaption { display: none; }
 html body.frontpage main .container article .category { text-align: center; font-style: italic; font-size: smaller; }
 html body.article header .container, html body.article main .container, html body.portfolio header .container, html body.portfolio main .container { max-width: 36.875em; }

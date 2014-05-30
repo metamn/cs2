@@ -3,11 +3,15 @@
 
 {% include header.html %}
 {% include about.html %}
-{% include contact.html %}
 
 <main id="main">
-  {{ content }}
+  <div class="container">
+    {{ content }}
+  </div>
 </main>
+
+
+{% include contact.html %}
 
 
 {% include scripts.html %}

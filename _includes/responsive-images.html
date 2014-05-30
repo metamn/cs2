@@ -8,10 +8,6 @@
     {% assign link = page.url %}
   {% endif %}
 
-  {% if include.link-from-image %}
-    {% assign link = page.images[image_index].link %}
-  {% endif %}
-
   {% assign normal = page.images[image_index].url %}
   {% assign mobile = page.images[image_index].url-mobile %}
 

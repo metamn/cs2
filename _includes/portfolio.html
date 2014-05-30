@@ -1,9 +1,4 @@
-<section class="thumbs">
-  <h3>Portfolio</h3>
-  
-  {% for post in site.posts %}
-    {% assign klass = post.title | downcase | replace:' ', '-'  %}
-    {% include thumb.html %}
-  {% endfor %}
-  
-</section>
+{% for post in site.posts %}
+  {% assign klass = post.title | downcase | replace:' ', '-'  %}
+  {% include thumb.html %}
+{% endfor %}

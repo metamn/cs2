@@ -10,6 +10,8 @@
 
 
 @mixin thumb {
+  text-align: center;
+  
   h1, figcaption {
     display: none;
   }
