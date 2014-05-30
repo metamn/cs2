@@ -33,7 +33,7 @@ html {
         @include hide-title;
       }
       
-      #contact
+      #contact {
         .container {
           margin: $grid-height 0;
           
@@ -43,6 +43,7 @@ html {
         }
       }
     }
+  
   
     &.frontpage {
       main {
