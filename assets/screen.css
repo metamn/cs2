@@ -58,7 +58,7 @@ html body .container { margin: 1.25em auto; position: relative; }
 @media only screen and (max-width: 47.999em) { html body .container { padding: 0 1.25em; } }
 html body .container header, html body .container #about, html body .container #contact { width: 100%; float: left; }
 html body .container header .container, html body .container #about .container, html body .container #contact .container { max-width: 24.58333em; }
-html body .container #about .container > h3, html body .container #contact .container > h3 { display: none; }
+html body .container #about .container > h3, html body .container #contact .container > h3, html body .container nav .container > h3 { display: none; }
 html body .container header { height: 6.25em; }
 html body .container header a { color: #795555; background: #f9f9f9; text-decoration: none; }
 html body .container header a:hover { border-bottom: 1px solid; }
@@ -77,8 +77,8 @@ html body.frontpage main .container { max-width: 36.875em; }
 html body.frontpage main .container article { margin-bottom: 1.25em; text-align: center; }
 html body.frontpage main .container article h1, html body.frontpage main .container article figcaption { display: none; }
 html body.frontpage main .container article .category { text-align: center; font-size: smaller; }
-html body.article header, html body.article main, html body.portfolio header, html body.portfolio main { width: 100%; float: left; }
-html body.article header .container, html body.article main .container, html body.portfolio header .container, html body.portfolio main .container { max-width: 36.875em; }
+html body.article header, html body.article main, html body.article #navigation, html body.portfolio header, html body.portfolio main, html body.portfolio #navigation { width: 100%; float: left; }
+html body.article header .container, html body.article main .container, html body.article #navigation .container, html body.portfolio header .container, html body.portfolio main .container, html body.portfolio #navigation .container { max-width: 36.875em; }
 @media only screen and (min-width: 48em) { html body.article main, html body.portfolio main { color: #3a3a3a; background: #f1f1f1; }
   html body.article main a, html body.portfolio main a { color: #ac7c68; background: #f1f1f1; text-decoration: none; }
   html body.article main a:hover, html body.portfolio main a:hover { border-bottom: 1px solid; } }
@@ -97,3 +97,7 @@ html body.article main .container table, html body.portfolio main .container tab
 html body.article main .container table thead th, html body.article main .container table tbody td, html body.portfolio main .container table thead th, html body.portfolio main .container table tbody td { padding: 0.625em; padding-left: 0; border-bottom: 1px solid #dfdfdf; }
 html body.article main .container mark, html body.portfolio main .container mark { color: #f9f9f9; background: #faafaf; }
 html body.portfolio main article.logo-animated figure { width: 100%; float: left; margin-bottom: 1.25em; }
+html body.portfolio #navigation .container { margin-bottom: 0; padding-bottom: 0; border-bottom: none; position: relative; top: -5em; }
+html body.portfolio #navigation .container ul li { display: inline-block; }
+html body.portfolio #navigation .container ul li.right { float: right; }
+html body.portfolio #navigation .container ul li a:hover { border-bottom: none !important; }

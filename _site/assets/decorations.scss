@@ -13,6 +13,34 @@
   }
 }
 
+@mixin navigation {
+  .container {
+    
+    // Remove separator
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+    
+    // Move up
+    position: relative;
+    top: -$grid-height;
+          
+    ul {
+      li {
+        display: inline-block;
+        
+        &.right {
+          float: right;
+        }
+        
+        a:hover {
+          border-bottom: none !important;
+        }
+      }
+    }
+  }
+}
+
 
 @mixin thumb {
   text-align: center;

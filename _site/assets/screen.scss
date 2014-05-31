@@ -27,7 +27,7 @@ html {
         @include column;
       }
       
-      #about, #contact {
+      #about, #contact, nav {
         @include hide-title;
       }
       
@@ -71,7 +71,7 @@ html {
     
     
     &.article, &.portfolio {
-      header, main {
+      header, main, #navigation {
         @include column($text-grid-width + $text-grid-width / 2);
       }
       
@@ -95,6 +95,10 @@ html {
     &.portfolio {
       main {
         @include portfolio-item;
+      }
+      
+      #navigation {
+        @include navigation;
       }
     }
   
