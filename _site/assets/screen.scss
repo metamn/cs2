@@ -1,0 +1,106 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "compass/css3";
+
+@import "colors";
+@import "grid";
+@import "typography";
+@import "decorations";
+@import "visual-grid";
+
+#grid, #gravity {
+  display: none;
+}
+
+html {
+  body {
+    @include body;
+    
+    .container {
+      @include container;
+      
+      header, #about, #contact {
+        @include column;
+      }
+      
+      #about, #contact, nav {
+        @include hide-title;
+      }
+      
+      header {
+        @include rows(1);
+        @include header;
+      }
+      
+      #about {
+        @include rows(2);
+        text-align: justify;
+        
+        @include mobile {
+          height: auto;
+        }
+      }
+      
+      #contact {
+        margin: $grid-height auto;
+        
+        p {
+          @include button;
+        }
+      }
+    }
+  
+  
+    &.frontpage {
+      main {
+        @include column($text-grid-width + $text-grid-width / 2);
+        
+        .container {
+          article {
+            margin-bottom: $gutter;
+            @include thumb;
+          }
+        }
+      }
+    }
+    
+    
+    
+    &.article, &.portfolio {
+      header, main, #navigation {
+        @include column($text-grid-width + $text-grid-width / 2);
+      }
+      
+      main {
+        @include tablet-and-up {
+          @include color($color, $light-grey);
+          @include link($link, $light-grey);
+        }
+               
+        .container {
+          @include extended-typographic-elements;
+          
+          @include separator;
+          margin-bottom: $grid-height;
+          padding-bottom: $grid-height;
+        }
+      }
+    }
+    
+    
+    &.portfolio {
+      main {
+        @include portfolio-item;
+      }
+      
+      #navigation {
+        @include navigation;
+      }
+    }
+  
+  }
+}

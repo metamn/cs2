@@ -4,16 +4,16 @@
     <ul>
       <li>
         {% if page.next == nil %}
-          <a href="{{ site.url }}/" title="Portfolio">all items</a>
+          <a href="{{ site.url }}/" title="Portfolio">&larr; all items</a>
         {% else %}
-          <a href="{{ site.url }}{{ page.next.url }}" title="{{ page.next.title }}">&larr;</a>
+          <a href="{{ site.url }}{{ page.next.url }}" title="{{ page.next.title }}">&larr; {{ page.next.title | downcase }}</a>
         {% endif %}
       </li>
       <li class="right">
         {% if page.previous == nil %}
-          <a href="{{ site.url }}/" title="Portfolio">all items</a>
+          <a href="{{ site.url }}/" title="Portfolio">all items &rarr;</a>
         {% else %}
-          <a href="{{ site.url }}{{ page.previous.url }}" title="{{ page.previous.title }}">&rarr;</a>
+          <a href="{{ site.url }}{{ page.previous.url }}" title="{{ page.previous.title }}">{{ page.previous.title | downcase }} &rarr;</a>
         {% endif %}
       </li>
     </ul>
