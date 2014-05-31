@@ -1,0 +1,21 @@
+<nav id="navigation">
+  <div class="container">
+    <h3>Navigation</h3>
+    <ul>
+      <li>
+        {% if page.next == nil %}
+          <a href="{{ site.url }}/" title="Portfolio">all items</a>
+        {% else %}
+          <a href="{{ site.url }}{{ page.next.url }}" title="{{ page.next.title }}">&larr;</a>
+        {% endif %}
+      </li>
+      <li class="right">
+        {% if page.previous == nil %}
+          <a href="{{ site.url }}/" title="Portfolio">all items</a>
+        {% else %}
+          <a href="{{ site.url }}{{ page.previous.url }}" title="{{ page.previous.title }}">&rarr;</a>
+        {% endif %}
+      </li>
+    </ul>
+  </div>
+</nav>
