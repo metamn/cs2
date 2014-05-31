@@ -9,16 +9,11 @@
   {% endif %}
 
   {% assign normal = page.images[image_index].url %}
-<<<<<<< HEAD
-  {% assign mobile = page.images[image_index].url %}
-=======
-
   {% if include.small %}
     {% assign mobile = page.images[image_index].url | replace: '.png', '-small.png' %}
   {% else %}
     {% assign mobile = page.images[image_index].url %}
   {% endif %}
->>>>>>> dev
 
 {% else %}
 
