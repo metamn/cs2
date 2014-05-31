@@ -67,10 +67,11 @@ html body .container header p { font-size: smaller; }
 html body .container #about { height: 12.5em; text-align: justify; }
 @media only screen and (max-width: 47.999em) { html body .container #about { height: auto; } }
 html body .container #contact { margin: 5em auto; }
-html body .container #contact p { text-align: center; border: 1px solid #dfdfdf; padding: 0.625em 1.25em; box-shadow: 1px 0 #dfdfdf, 0 1px #dfdfdf, 2px 1px #dfdfdf, 1px 2px #dfdfdf, 3px 2px #dfdfdf, 2px 3px #dfdfdf, 4px 3px #dfdfdf, 3px 4px #dfdfdf, 5px 4px #dfdfdf, 4px 5px #dfdfdf; width: calc(100% - 2.5em - 2px); }
+html body .container #contact p { text-align: center; border: 1px solid #dfdfdf; padding: 0.625em 1.25em 0.78125em; box-shadow: 1px 0 #dfdfdf, 0 1px #dfdfdf, 2px 1px #dfdfdf, 1px 2px #dfdfdf, 3px 2px #dfdfdf, 2px 3px #dfdfdf, 4px 3px #dfdfdf, 3px 4px #dfdfdf, 5px 4px #dfdfdf, 4px 5px #dfdfdf; width: calc(100% - 2.5em - 2px); }
 html body .container #contact p a { color: #3a3a3a; background: #f9f9f9; text-decoration: none; }
 html body .container #contact p a:hover { border-bottom: 1px solid; }
 html body .container #contact p span { font-style: italic; font-family: 'Old Standard TT', serif; font-size: larger; }
+html body .container #contact p a:hover { border-bottom: none !important; }
 html body.frontpage main { width: 100%; float: left; }
 html body.frontpage main .container { max-width: 36.875em; }
 html body.frontpage main .container article { margin-bottom: 1.25em; text-align: center; }
