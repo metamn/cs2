@@ -12,6 +12,10 @@
 @import "decorations";
 @import "visual-grid";
 
+#grid, #gravity {
+  display: none;
+}
+
 html {
   body {
     @include body;
@@ -71,6 +75,11 @@ html {
       }
       
       main {
+        @include tablet-and-up {
+          @include color($color, $light-grey);
+          @include link($link, $light-grey);
+        }
+               
         .container {
           @include extended-typographic-elements;
           
