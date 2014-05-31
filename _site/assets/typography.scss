@@ -93,6 +93,5 @@ h1 {
   
   mark {
     @include color($background, $highlight);
-    padding: $gutter/8 $gutter/4;
   }
 }
