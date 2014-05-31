@@ -64,7 +64,7 @@ html body .container header a { color: #795555; background: #f9f9f9; text-decora
 html body .container header a:hover { border-bottom: 1px solid; }
 html body .container header h4 { font-style: italic; font-family: 'Old Standard TT', serif; }
 html body .container header p { font-size: smaller; }
-html body .container #about { height: 12.5em; }
+html body .container #about { height: 12.5em; text-align: justify; }
 @media only screen and (max-width: 47.999em) { html body .container #about { height: auto; } }
 html body .container #contact { margin: 5em auto; }
 html body .container #contact p { text-align: center; border: 1px solid #dfdfdf; padding: 0.625em 1.25em; box-shadow: 1px 0 #dfdfdf, 0 1px #dfdfdf, 2px 1px #dfdfdf, 1px 2px #dfdfdf, 3px 2px #dfdfdf, 2px 3px #dfdfdf, 4px 3px #dfdfdf, 3px 4px #dfdfdf, 5px 4px #dfdfdf, 4px 5px #dfdfdf; width: calc(100% - 2.5em - 2px); }
@@ -85,6 +85,7 @@ html body.article main .container, html body.portfolio main .container { border-
 html body.article main .container p + p, html body.article main .container p + figure, html body.article main .container ol + figure, html body.article main .container figure + p, html body.article main .container table + p, html body.portfolio main .container p + p, html body.portfolio main .container p + figure, html body.portfolio main .container ol + figure, html body.portfolio main .container figure + p, html body.portfolio main .container table + p { margin-top: 1.25em; }
 html body.article main .container figure + figure, html body.portfolio main .container figure + figure { margin-top: 2.5em; }
 html body.article main .container figure img, html body.portfolio main .container figure img { padding: 1.25em; background: white; border-bottom: 1px solid #dfdfdf; }
+@media only screen and (max-width: 47.999em) { html body.article main .container figure img, html body.portfolio main .container figure img { position: relative; margin-left: -1.25em; } }
 html body.article main .container figure a:hover, html body.portfolio main .container figure a:hover { border: none !important; }
 html body.article main .container figcaption, html body.portfolio main .container figcaption { font-style: italic; font-size: smaller; text-align: left; margin-bottom: 1.25em; }
 html body.article main .container figcaption:before, html body.portfolio main .container figcaption:before { content: '\2014'; display: inline-block; margin-left: 1.25em; }

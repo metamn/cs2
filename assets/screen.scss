@@ -38,6 +38,7 @@ html {
       
       #about {
         @include rows(2);
+        text-align: justify;
         
         @include mobile {
           height: auto;
