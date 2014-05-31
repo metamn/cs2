@@ -35,6 +35,11 @@ h1 {
     padding: $gutter;
     background: $white;
     border-bottom: 1px solid $grey;
+    
+    @include mobile {
+      position: relative;
+      margin-left: -$gutter;
+    }
   }
   
   a:hover {
