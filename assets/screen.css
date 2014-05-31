@@ -38,9 +38,8 @@ html body a:hover { border-bottom: 1px solid; }
 html body p + p { margin-top: 1.25em; }
 html body .container { position: relative; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); padding: 1.25em; }
 html body .container header, html body .container #about, html body .container #contact { width: 100%; float: left; }
-html body .container header .container, html body .container #about .container, html body .container #contact .container { max-width: 24.58333em; padding: 0; }
+html body .container header .container, html body .container #about .container, html body .container #contact .container { max-width: 24.58333em; }
 html body .container #about .container > h3, html body .container #contact .container > h3 { display: none; }
-html body .container header { height: 6.25em; }
 html body .container header a { color: #795555; background: #f9f9f9; text-decoration: none; }
 html body .container header a:hover { border-bottom: 1px solid; }
 html body .container header h4 { font-style: italic; font-family: 'Old Standard TT', serif; }
@@ -52,13 +51,13 @@ html body .container #contact .container p a { color: #3a3a3a; background: #f9f9
 html body .container #contact .container p a:hover { border-bottom: 1px solid; }
 html body .container #contact .container p span { font-style: italic; font-family: 'Old Standard TT', serif; font-size: larger; }
 html body.frontpage main { width: 100%; float: left; }
-html body.frontpage main .container { max-width: 36.875em; padding: 0; }
+html body.frontpage main .container { max-width: 36.875em; }
 @media only screen and (max-width: 47.999em) { html body.frontpage main .container { margin-top: 5em; } }
 html body.frontpage main .container article { margin-bottom: 1.25em; text-align: center; }
 html body.frontpage main .container article h1, html body.frontpage main .container article figcaption { display: none; }
 html body.frontpage main .container article .category { text-align: center; font-style: italic; font-size: smaller; }
 html body.article header, html body.article main, html body.portfolio header, html body.portfolio main { width: 100%; float: left; }
-html body.article header .container, html body.article main .container, html body.portfolio header .container, html body.portfolio main .container { max-width: 36.875em; padding: 0; }
+html body.article header .container, html body.article main .container, html body.portfolio header .container, html body.portfolio main .container { max-width: 36.875em; }
 html body.article main p + p, html body.article main p + figure, html body.article main ol + figure, html body.article main figure + p, html body.article main table + p, html body.portfolio main p + p, html body.portfolio main p + figure, html body.portfolio main ol + figure, html body.portfolio main figure + p, html body.portfolio main table + p { margin-top: 1.25em; }
 html body.article main figure + figure, html body.portfolio main figure + figure { margin-top: 2.5em; }
 html body.article main figure a:hover, html body.portfolio main figure a:hover { border: none !important; }
@@ -68,8 +67,8 @@ html body.article main .spacer, html body.portfolio main .spacer { width: 100%; 
 html body.article main blockquote, html body.portfolio main blockquote { margin: 1.25em 0; padding: 1.25em; border: 1px solid #dfdfdf; width: calc(100% - 2.5em - 2px); }
 html body.article main table, html body.portfolio main table { width: 100%; display: table !important; }
 html body.article main table thead th, html body.article main table tbody td, html body.portfolio main table thead th, html body.portfolio main table tbody td { padding: 0.625em; padding-left: 0; border-bottom: 1px solid #dfdfdf; }
-html body.article main mark, html body.portfolio main mark { color: #f9f9f9; background: #faafaf; padding: 0.15625em 0.3125em; }
+html body.article main mark, html body.portfolio main mark { color: #f9f9f9; background: #faafaf; }
 html body.article #about .container, html body.portfolio #about .container { border-top: 1px solid #dfdfdf; padding-top: 5em; margin-top: 5em; }
-html body.portfolio main article { width: 100%; float: left; }
-html body.portfolio main article figure { width: 100%; float: left; margin-bottom: 1.25em; }
-html body.portfolio main article figure figcaption { text-align: left; }
+html body.portfolio main article figcaption { text-align: left; margin-bottom: 1.25em; }
+html body.portfolio main article figcaption:before { content: '\2014'; display: inline-block; margin-left: 1.25em; }
+html body.portfolio main article.logo-animated figure { width: 100%; float: left; margin-bottom: 1.25em; }

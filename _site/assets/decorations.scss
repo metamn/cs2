@@ -1,13 +1,20 @@
 @mixin portfolio-item {
   article {
-    @include block;
-    
-    figure {
-      @include block;
+    figcaption {
+      text-align: left;
       margin-bottom: $gutter;
       
-      figcaption {
-        text-align: left;
+      &:before {
+        content: '\2014';
+        display: inline-block;
+        margin-left: $gutter;
+      }
+    }
+    
+    &.logo-animated {
+      figure {
+        @include block;
+        margin-bottom: $gutter;
       }
     }
   }
@@ -45,6 +52,7 @@
   @include link;
   @include simple-typographic-elements;
 }
+
 
 
 
