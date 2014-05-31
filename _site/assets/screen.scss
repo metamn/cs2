@@ -10,7 +10,7 @@
 @import "grid";
 @import "typography";
 @import "decorations";
-
+@import "visual-grid";
 
 html {
   body {
@@ -28,20 +28,23 @@ html {
       }
       
       header {
+        @include rows(1);
         @include header;
       }
       
       #about {
-        margin-bottom: $grid-height;
+        @include rows(2);
+        
+        @include mobile {
+          height: auto;
+        }
       }
       
       #contact {
-        .container {
-          margin: $grid-height 0;
-          
-          p {
-            @include button;
-          }
+        margin: $grid-height auto;
+        
+        p {
+          @include button;
         }
       }
     }
@@ -52,10 +55,6 @@ html {
         @include column($text-grid-width + $text-grid-width / 2);
         
         .container {
-          @include mobile {
-            margin-top: $grid-height;
-          }
-          
           article {
             margin-bottom: $gutter;
             @include thumb;
@@ -72,12 +71,12 @@ html {
       }
       
       main {
-        @include extended-typographic-elements;
-      }
-      
-      #about {
         .container {
+          @include extended-typographic-elements;
+          
           @include separator;
+          margin-bottom: $grid-height;
+          padding-bottom: $grid-height;
         }
       }
     }

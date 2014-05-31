@@ -31,9 +31,16 @@ h1 {
 }
 
 @mixin figcaption {
-  text-align: center;
   font-style: italic;
   font-size: smaller;
+  text-align: left;
+  margin-bottom: $gutter;
+  
+  &:before {
+    content: '\2014';
+    display: inline-block;
+    margin-left: $gutter;
+  }
 }
 
 
