@@ -46,7 +46,7 @@ html body .container header h4 { font-style: italic; font-family: 'Old Standard 
 html body .container header p { font-size: smaller; }
 html body .container #about { margin-bottom: 5em; }
 html body .container #contact .container { margin: 5em 0; }
-html body .container #contact .container p { text-align: center; border: 1px solid #dfdfdf; padding: 0.625em 1.25em; box-shadow: 1px 0 #dfdfdf, 0 1px #dfdfdf, 2px 1px #dfdfdf, 1px 2px #dfdfdf, 3px 2px #dfdfdf, 2px 3px #dfdfdf, 4px 3px #dfdfdf, 3px 4px #dfdfdf, 5px 4px #dfdfdf, 4px 5px #dfdfdf; width: calc(100% - 2.5em - 24px); }
+html body .container #contact .container p { text-align: center; border: 1px solid #dfdfdf; padding: 0.625em 1.25em; box-shadow: 1px 0 #dfdfdf, 0 1px #dfdfdf, 2px 1px #dfdfdf, 1px 2px #dfdfdf, 3px 2px #dfdfdf, 2px 3px #dfdfdf, 4px 3px #dfdfdf, 3px 4px #dfdfdf, 5px 4px #dfdfdf, 4px 5px #dfdfdf; width: calc(100% - 2.5em - 2px); }
 html body .container #contact .container p a { color: #3a3a3a; background: #f9f9f9; text-decoration: none; }
 html body .container #contact .container p a:hover { border-bottom: 1px solid; }
 html body .container #contact .container p span { font-style: italic; font-family: 'Old Standard TT', serif; font-size: larger; }
