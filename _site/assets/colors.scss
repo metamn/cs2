@@ -1,0 +1,17 @@
+// These colors are derived from $background
+$background: #f9f9f9;
+$color: #3A3A3A;
+$grey: #DFDFDF;
+$title: #795555;
+$highlight: #FAAFAF;
+
+// These colors are derived from $title
+$link: #AC7C68;
+
+
+
+@mixin color($c: $color, $b: $background) {
+  color: $c;
+  background: $b;
+}
+
