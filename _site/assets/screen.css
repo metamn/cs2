@@ -97,7 +97,6 @@ html body.article main .container table, html body.portfolio main .container tab
 html body.article main .container table thead th, html body.article main .container table tbody td, html body.portfolio main .container table thead th, html body.portfolio main .container table tbody td { padding: 0.625em; padding-left: 0; border-bottom: 1px solid #dfdfdf; }
 html body.article main .container mark, html body.portfolio main .container mark { color: #f9f9f9; background: #faafaf; }
 html body.portfolio main article.logo-animated figure { width: 100%; float: left; margin-bottom: 1.25em; }
-html body.portfolio #navigation .container { margin-bottom: 0; padding-bottom: 0; border-bottom: none; position: relative; top: -5em; }
+html body.portfolio #navigation .container { padding-left: 0; padding-right: 0; margin-bottom: 0; padding-bottom: 0; border-bottom: none; position: relative; top: -5em; }
 html body.portfolio #navigation .container ul li { display: inline-block; }
 html body.portfolio #navigation .container ul li.right { float: right; }
-html body.portfolio #navigation .container ul li a:hover { border-bottom: none !important; }
