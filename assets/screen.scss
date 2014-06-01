@@ -52,7 +52,9 @@ html {
           @include button;
         }
       }
-      
+    }
+  
+    &.frontpage, &.older {
       main {
         @include column($text-grid-width + $text-grid-width / 2);
         
@@ -64,7 +66,6 @@ html {
         }
       }
     }
-  
   
     
     &.article {
@@ -87,6 +88,5 @@ html {
         }
       }
     }
-    
   }
 }
