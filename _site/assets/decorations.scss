@@ -1,0 +1,115 @@
+@mixin portfolio-item {
+  article {
+    figcaption {
+      
+    }
+    
+    &.logo-animated {
+      figure {
+        @include block;
+        margin-bottom: $gutter;
+      }
+    }
+  }
+}
+
+@mixin navigation {
+  .container {
+    // Stretch to limits
+    padding-left: 0;
+    padding-right: 0;
+    
+    // Remove separator
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+    
+    // Move up
+    position: relative;
+    top: -$grid-height;
+          
+    ul {
+      li {
+        display: inline-block;
+        
+        &.right {
+          float: right;
+        }
+      }
+    }
+  }
+}
+
+
+@mixin thumb {
+  text-align: center;
+  
+  h1, figcaption {
+    display: none;
+  }
+  
+  .category {
+    text-align: center;
+    font-size: smaller;
+  }
+}
+
+
+@mixin header {
+  @include link($title);
+        
+  h4 {
+    @include title;
+  }
+  
+  p {
+    font-size: smaller;
+  }
+}
+
+
+@mixin body {
+  @include color;
+  @include link;
+  @include simple-typographic-elements;
+}
+
+
+
+
+@mixin link($c: $link, $b: $background) {
+  a {
+    @include color($c, $b);
+    text-decoration: none;
+    
+    &:hover {
+      border-bottom: 1px solid;
+    }
+  }
+}
+
+
+@mixin separator {
+  border-bottom: 1px solid $grey;
+}
+
+
+@mixin button {
+  text-align: center;
+  border: 1px solid $grey;
+  padding: $gutter/2 $gutter $gutter/2 + $gutter/8;
+  box-shadow: 1px 0 $grey, 0 1px $grey, 2px 1px $grey, 1px 2px $grey, 3px 2px $grey, 2px 3px $grey, 4px 3px $grey, 3px 4px $grey, 5px 4px $grey, 4px 5px $grey;
+  
+  width: calc(100% - #{$gutter * 2} - #{2px});
+  
+  @include link($color);
+  
+  span {
+    @include title;
+    font-size: larger;
+  }
+
+  a:hover {
+    border-bottom: none !important;
+  }
+}
