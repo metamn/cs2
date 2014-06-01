@@ -96,6 +96,22 @@ h1 {
     margin: $gutter 0;
   }
   
+  dl {
+    margin: $gutter 0;
+    
+    dt {
+      font-weight: bold;
+    }
+    
+    dd {
+      margin-bottom: $gutter/2;
+    }
+    
+    dd + dt {
+      margin-top: $gutter;
+    }
+  }
+  
   .spacer {
     @include block;
     margin-bottom: $gutter;
