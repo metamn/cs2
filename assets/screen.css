@@ -97,7 +97,7 @@ html body.article main .container dl dt { font-weight: bold; }
 html body.article main .container dl dd { margin-bottom: 0.625em; }
 html body.article main .container dl dd + dt { margin-top: 1.25em; }
 html body.article main .container .spacer { width: 100%; float: left; margin-bottom: 1.25em; }
-html body.article main .container blockquote { margin: 1.25em 0; padding: 1.25em; border: 2px solid white; width: calc(100% - 2.5em - 4px); font-style: italic; font-weight: bold; }
+html body.article main .container blockquote { margin: 1.25em 0; padding: 1.25em; border: 1px solid white; width: calc(100% - 2.5em - 2px); font-style: italic; font-weight: bold; }
 html body.article main .container .blockquote-source { position: relative; float: right; top: -2.5em; right: 1.25em; font-variant: small-caps; font-size: smaller; letter-spacing: 1.2px; }
 html body.article main .container table { width: 100%; display: table !important; }
 html body.article main .container table thead th, html body.article main .container table tbody td { padding: 0.625em; padding-left: 0; border-bottom: 1px solid white; }

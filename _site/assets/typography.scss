@@ -120,8 +120,8 @@ h1 {
   blockquote {
     margin: $gutter 0;
     padding: $gutter;
-    border: 2px solid $white;
-    width: calc(100% - #{$gutter * 2} - #{4px});
+    border: 1px solid $white;
+    width: calc(100% - #{$gutter * 2} - #{2px});
     font-style: italic;
     font-weight: bold;
   }
