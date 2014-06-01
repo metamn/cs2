@@ -1,7 +1,7 @@
 <article class="{{ klass }}">
   {% assign page = post %}
   {% assign image_index = 0 %}
-  {% include responsive-images.html type='from post' small='true' %}
+  {% include responsive-images.html type='from post' small='true' link=page.link %}
   
   <h1>
     {{ post.title }}

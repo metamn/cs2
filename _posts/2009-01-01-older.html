@@ -1,28 +1,34 @@
 ---
-layout: portfolio
+layout: older
 title: Older projects
 type: older projects
 images:
+  - url: /assets/images/ceu-desktop-1.png
+    title: Central European University
+  - url: /assets/images/scrol-desktop-1.png
+    title: Shopify Theme Scrol
   - url: /assets/images/languagelab-desktop-1.png
-    url-mobile: /assets/images/languagelab2.png
     title: Languagelab
-  - url: /assets/images/languagelab-desktop-1.png
-    title: Anvelocom
-    link: /anvelocom
-  - url: /assets/images/smuff-v3-desktop-1.png
-    title: Anvelocom
-    link: /anvelocom
+  - url: /assets/images/smuff-v3-desktop-1a.png
+    title: Smuff v3
   - url: /assets/images/smuff-v3-desktop-2.png
-    title: Anvelocom
-    link: /anvelocom
+    title: Smuff v3
 ---
 
+<h1>older projects</h1>
 
 {% for image in page.images %}
   <article>
-    <h3>{{ image.title }}</h3>
     {% assign image_index = forloop.index0 %}
     {% include responsive-images.html type='from post' link='' %}
+    
+    <h1>
+      {{ image.title }}
+    </h1>
+    
+    <div class="category">
+      {{ image.title }}
+    </div>
   </article>
 {% endfor %}
 

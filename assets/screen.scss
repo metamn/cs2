@@ -54,8 +54,7 @@ html {
       }
     }
   
-  
-    &.frontpage {
+    &.frontpage, &.older {
       main {
         @include column($text-grid-width + $text-grid-width / 2);
         
@@ -67,10 +66,9 @@ html {
         }
       }
     }
+  
     
-    
-    
-    &.article, &.portfolio {
+    &.article {
       header, main, #navigation {
         @include column($text-grid-width + $text-grid-width / 2);
       }
@@ -90,17 +88,5 @@ html {
         }
       }
     }
-    
-    
-    &.portfolio {
-      main {
-        @include portfolio-item;
-      }
-      
-      #navigation {
-        @include navigation;
-      }
-    }
-  
   }
 }
