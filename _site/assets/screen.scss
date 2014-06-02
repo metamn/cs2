@@ -87,6 +87,12 @@ html {
           padding-bottom: $grid-height;
         }
       }
+      
+      #contact {
+        @include mobile {
+          margin-top: 0;
+        }
+      }
     }
   }
 }
