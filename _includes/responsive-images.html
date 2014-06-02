@@ -2,10 +2,12 @@
 
   {% assign title = page.images[image_index].title %}
   
-  {% if include.link %} 
+  {% if include.link %}
     {% assign link = include.link %}
   {% else %}
-    {% assign link = page.url %}
+    {% capture link %}
+      {{ site.url }}{{ page.url }}
+    {% endcapture %}
   {% endif %}
 
   {% assign normal = page.images[image_index].url %}
@@ -34,7 +36,7 @@
 
 <figure>
   {% if link != "" %}
-    <a href="{{ site.url }}{{ link }}" title="{{ title }}">
+    <a href="{{ link }}" title="{{ title }}">
   {% endif %}
 
   <div data-picture data-alt="{{ title }}">
@@ -51,7 +53,7 @@
   
   <figcaption>
     {% if link != "" %}
-      <a href="{{ site.url }}{{ link }}" title="{{ title }}">
+      <a href="{{ link }}" title="{{ title }}">
     {% endif %}
     {{ title }}
     {% if link != '' %}
