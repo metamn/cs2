@@ -1,7 +1,15 @@
 @mixin portfolio-item {
   article {
     figcaption {
+      margin-left: $gutter / 2;
+    }
+    
+    &.services {
+      margin: $grid-height 0;
       
+      h3 {
+        display: none;
+      }
     }
     
     &.logo-animated {

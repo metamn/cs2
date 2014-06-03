@@ -154,6 +154,7 @@ h1 {
   }
   
   mark {
-    @include color($background, $highlight);
+    @include color($color, $highlight);
+    padding: 0 $gutter/4;
   }
 }
