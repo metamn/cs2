@@ -66,6 +66,12 @@ html {
         }
       }
     }
+    
+    &.older {
+      h1 {
+        display: none;
+      }
+    }
   
     
     &.article, &.portfolio {

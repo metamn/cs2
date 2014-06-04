@@ -22,7 +22,7 @@ body { font-size: 100%; line-height: 1.25; }
 @media only screen and (min-width: 90.001em) { body { font-size: 150%; line-height: 1.25; } }
 img { max-width: 100%; height: auto; }
 
-h1, h2, h3, h4 { font-size: larger; }
+h1, h2, h3, h4 { font-size: larger; font-weight: bold; }
 
 h4 { margin-top: 1.25em; }
 
@@ -30,7 +30,8 @@ h3 { margin-top: 2.5em; margin-bottom: 1.25em; }
 
 h2 { margin-top: 3.75em; margin-bottom: 2.5em; }
 
-h1 { margin-top: 3.75em; margin-bottom: 2.5em; font-weight: bold; }
+h1 { margin-top: 3.75em; margin-bottom: 2.5em; }
+h1:first-letter { text-transform: uppercase; }
 
 #gravity .h-vertical, #gravity .h-horizontal, #gravity .h-golden-rectangle { position: fixed; z-index: 1000; opacity: .3; }
 #gravity .h-vertical { left: calc(50% - 1px); height: 100%; border-left: 1px solid red; }
@@ -62,7 +63,7 @@ html body .container #about .container > h3, html body .container #contact .cont
 html body .container header { height: 6.25em; }
 html body .container header a { color: #795555; background: #f9f9f9; text-decoration: none; }
 html body .container header a:hover { border-bottom: 1px solid; }
-html body .container header h4 { font-style: italic; font-family: 'Old Standard TT', serif; }
+html body .container header h4 { font-weight: 400; font-style: italic; font-family: 'Old Standard TT', serif; }
 html body .container header p { font-size: smaller; }
 html body .container #about { height: 12.5em; text-align: justify; }
 @media only screen and (max-width: 47.999em) { html body .container #about { height: auto; } }
@@ -70,13 +71,14 @@ html body .container #contact { margin: 5em auto; }
 html body .container #contact p { text-align: center; border: 1px solid #dfdfdf; padding: 0.625em 1.25em 0.78125em; box-shadow: 1px 0 #dfdfdf, 0 1px #dfdfdf, 2px 1px #dfdfdf, 1px 2px #dfdfdf, 3px 2px #dfdfdf, 2px 3px #dfdfdf, 4px 3px #dfdfdf, 3px 4px #dfdfdf, 5px 4px #dfdfdf, 4px 5px #dfdfdf; width: calc(100% - 2.5em - 2px); }
 html body .container #contact p a { color: #3a3a3a; background: #f9f9f9; text-decoration: none; }
 html body .container #contact p a:hover { border-bottom: 1px solid; }
-html body .container #contact p span { font-style: italic; font-family: 'Old Standard TT', serif; font-size: larger; }
+html body .container #contact p span { font-weight: 400; font-style: italic; font-family: 'Old Standard TT', serif; font-size: larger; }
 html body .container #contact p a:hover { border-bottom: none !important; }
 html body.frontpage main, html body.older main { width: 100%; float: left; }
 html body.frontpage main .container, html body.older main .container { max-width: 36.875em; }
 html body.frontpage main .container article, html body.older main .container article { margin-bottom: 1.25em; text-align: center; }
 html body.frontpage main .container article h1, html body.frontpage main .container article figcaption, html body.older main .container article h1, html body.older main .container article figcaption { display: none; }
 html body.frontpage main .container article .category, html body.older main .container article .category { text-align: center; font-size: smaller; }
+html body.older h1 { display: none; }
 html body.article header, html body.article main, html body.article #navigation, html body.portfolio header, html body.portfolio main, html body.portfolio #navigation { width: 100%; float: left; }
 html body.article header .container, html body.article main .container, html body.article #navigation .container, html body.portfolio header .container, html body.portfolio main .container, html body.portfolio #navigation .container { max-width: 36.875em; }
 @media only screen and (min-width: 48em) { html body.article main, html body.portfolio main { color: #3a3a3a; background: #f1f1f1; }
@@ -98,7 +100,7 @@ html body.article main .container dl dt, html body.portfolio main .container dl 
 html body.article main .container dl dd, html body.portfolio main .container dl dd { margin-bottom: 0.625em; }
 html body.article main .container dl dd + dt, html body.portfolio main .container dl dd + dt { margin-top: 1.25em; }
 html body.article main .container .spacer, html body.portfolio main .container .spacer { width: 100%; float: left; margin-bottom: 1.25em; }
-html body.article main .container blockquote, html body.portfolio main .container blockquote { margin: 1.25em 0; padding: 1.25em; border: 1px solid white; width: calc(100% - 2.5em - 2px); font-style: italic; font-weight: 400; line-height: 1.5; }
+html body.article main .container blockquote, html body.portfolio main .container blockquote { margin: 1.25em 0; padding: 1.25em; border: 1px solid white; width: calc(100% - 2.5em - 2px); font-style: italic; line-height: 1.5; font-weight: 400; }
 html body.article main .container .blockquote-source, html body.portfolio main .container .blockquote-source { position: relative; float: right; top: -3.125em; right: 1.25em; font-variant: small-caps; font-size: smaller; letter-spacing: 1.2px; }
 html body.article main .container table, html body.portfolio main .container table { width: 100%; display: table !important; }
 html body.article main .container table thead th, html body.article main .container table tbody td, html body.portfolio main .container table thead th, html body.portfolio main .container table tbody td { padding: 0.625em; padding-left: 0; border-bottom: 1px solid white; }

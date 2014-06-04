@@ -1,5 +1,6 @@
 h1, h2, h3, h4 {
   font-size: larger;
+  font-weight: bold;
 }
   
 h4 {
@@ -19,12 +20,16 @@ h2 {
 h1 {
   margin-top: $gutter * 3;
   margin-bottom: $gutter * 2;
-  font-weight: bold;
+  
+  &:first-letter {
+    text-transform: uppercase;
+  }
 }
 
 
 
 @mixin title {
+  font-weight: 400;
   font-style: italic;
   font-family: 'Old Standard TT', serif;
 }
@@ -127,8 +132,8 @@ h1 {
     border: 1px solid $white;
     width: calc(100% - #{$gutter * 2} - #{2px});
     font-style: italic;
-    font-weight: 400;
     line-height: 1.5;
+    font-weight: 400;
   }
 
   .blockquote-source {
