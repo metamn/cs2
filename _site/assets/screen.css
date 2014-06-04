@@ -22,7 +22,7 @@ body { font-size: 100%; line-height: 1.25; }
 @media only screen and (min-width: 90.001em) { body { font-size: 150%; line-height: 1.25; } }
 img { max-width: 100%; height: auto; }
 
-h1, h2, h3, h4 { font-size: larger; font-weight: bold; }
+h1, h2, h3, h4 { font-size: larger; font-family: 'Old Standard TT', serif; }
 
 h4 { margin-top: 1.25em; }
 
@@ -30,7 +30,7 @@ h3 { margin-top: 2.5em; margin-bottom: 1.25em; }
 
 h2 { margin-top: 3.75em; margin-bottom: 2.5em; }
 
-h1 { margin-top: 3.75em; margin-bottom: 2.5em; }
+h1 { margin-top: 3.75em; margin-bottom: 2.5em; font-weight: bold; }
 
 #gravity .h-vertical, #gravity .h-horizontal, #gravity .h-golden-rectangle { position: fixed; z-index: 1000; opacity: .3; }
 #gravity .h-vertical { left: calc(50% - 1px); height: 100%; border-left: 1px solid red; }
@@ -93,10 +93,9 @@ html body.article main .container figcaption, html body.portfolio main .containe
 html body.article main .container figcaption:before, html body.portfolio main .container figcaption:before { content: '\2014'; display: inline-block; margin-left: 1.25em; }
 @media only screen and (max-width: 47.999em) { html body.article main .container figcaption:before, html body.portfolio main .container figcaption:before { margin-left: 0; } }
 html body.article main .container ol, html body.portfolio main .container ol { list-style-type: decimal; line-height: 1.5; }
-html body.article main .container ul, html body.portfolio main .container ul { list-style-type: none; margin: 1.25em 0; }
-html body.article main .container ul li:before, html body.portfolio main .container ul li:before { content: '\2014'; margin-right: 0.625em; }
+html body.article main .container ul, html body.portfolio main .container ul { list-style-type: disc; margin: 1.25em 0.9375em; }
 html body.article main .container dl, html body.portfolio main .container dl { margin: 1.25em 0; }
-html body.article main .container dl dt, html body.portfolio main .container dl dt { font-weight: bold; font-style: italic; }
+html body.article main .container dl dt, html body.portfolio main .container dl dt { font-weight: bold; font-style: italic; letter-spacing: 1px; }
 html body.article main .container dl dd, html body.portfolio main .container dl dd { margin-bottom: 0.625em; }
 html body.article main .container dl dd + dt, html body.portfolio main .container dl dd + dt { margin-top: 1.25em; }
 html body.article main .container .spacer, html body.portfolio main .container .spacer { width: 100%; float: left; margin-bottom: 1.25em; }
