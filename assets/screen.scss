@@ -52,9 +52,13 @@ html {
           @include button;
         }
       }
+      
+      #navigation {
+        @include navigation;
+      }
     }
   
-    &.frontpage, &.older {
+    &.frontpage, &.older-projects {
       main {
         @include column($text-grid-width + $text-grid-width / 2);
         
@@ -67,7 +71,7 @@ html {
       }
     }
     
-    &.older {
+    &.older-projects {
       h1 {
         display: none;
       }
@@ -103,10 +107,6 @@ html {
     
     &.portfolio {
       @include portfolio-item;
-      
-      #navigation {
-        @include navigation;
-      }
     }
   }
 }

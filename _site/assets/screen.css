@@ -72,12 +72,16 @@ html body .container #contact p a { color: #3a3a3a; background: #f9f9f9; text-de
 html body .container #contact p a:hover { border-bottom: 1px solid; }
 html body .container #contact p span { font-weight: 400; font-style: italic; font-family: 'Old Standard TT', serif; font-size: larger; }
 html body .container #contact p a:hover { border-bottom: none !important; }
-html body.frontpage main, html body.older main { width: 100%; float: left; }
-html body.frontpage main .container, html body.older main .container { max-width: 36.875em; }
-html body.frontpage main .container article, html body.older main .container article { margin-bottom: 1.25em; text-align: center; }
-html body.frontpage main .container article h1, html body.frontpage main .container article figcaption, html body.older main .container article h1, html body.older main .container article figcaption { display: none; }
-html body.frontpage main .container article .category, html body.older main .container article .category { text-align: center; font-size: smaller; }
-html body.older h1 { display: none; }
+html body .container #navigation .container { padding-left: 0; padding-right: 0; margin-bottom: 0; padding-bottom: 0; border-bottom: none; position: relative; top: -5em; }
+html body .container #navigation .container ul { list-style-type: none; }
+html body .container #navigation .container ul li { display: inline-block; }
+html body .container #navigation .container ul li.right { float: right; }
+html body.frontpage main, html body.older-projects main { width: 100%; float: left; }
+html body.frontpage main .container, html body.older-projects main .container { max-width: 36.875em; }
+html body.frontpage main .container article, html body.older-projects main .container article { margin-bottom: 1.25em; text-align: center; }
+html body.frontpage main .container article h1, html body.frontpage main .container article figcaption, html body.older-projects main .container article h1, html body.older-projects main .container article figcaption { display: none; }
+html body.frontpage main .container article .category, html body.older-projects main .container article .category { text-align: center; font-size: smaller; }
+html body.older-projects h1 { display: none; }
 html body.article header, html body.article main, html body.article #navigation, html body.portfolio header, html body.portfolio main, html body.portfolio #navigation { width: 100%; float: left; }
 html body.article header .container, html body.article main .container, html body.article #navigation .container, html body.portfolio header .container, html body.portfolio main .container, html body.portfolio #navigation .container { max-width: 36.875em; }
 @media only screen and (min-width: 48em) { html body.article main, html body.portfolio main { color: #3a3a3a; background: #f1f1f1; }
@@ -96,7 +100,7 @@ html body.article main .container ol, html body.portfolio main .container ol { l
 html body.article main .container ul, html body.portfolio main .container ul { list-style-type: disc; margin: 1.25em 0.9375em; }
 html body.article main .container dl, html body.portfolio main .container dl { margin: 1.25em 0; }
 html body.article main .container dl dt, html body.portfolio main .container dl dt { font-weight: bold; font-style: italic; letter-spacing: 1px; }
-html body.article main .container dl dd, html body.portfolio main .container dl dd { margin-bottom: 0.625em; }
+html body.article main .container dl dd, html body.portfolio main .container dl dd { margin-bottom: 0.625em; font-variant: small-caps; }
 html body.article main .container dl dd + dt, html body.portfolio main .container dl dd + dt { margin-top: 1.25em; }
 html body.article main .container .spacer, html body.portfolio main .container .spacer { width: 100%; float: left; margin-bottom: 1.25em; }
 html body.article main .container blockquote, html body.portfolio main .container blockquote { margin: 2.5em 0 0.3125em; font-style: italic; font-weight: 400; line-height: 1.5; }
@@ -111,7 +115,9 @@ html body.portfolio article figcaption { margin-left: 0.625em; }
 html body.portfolio article.services { margin: 5em 0; }
 html body.portfolio article.services h3 { display: none; }
 html body.portfolio article.logo-animated figure { width: 100%; float: left; margin-bottom: 1.25em; }
-html body.portfolio #navigation .container { padding-left: 0; padding-right: 0; margin-bottom: 0; padding-bottom: 0; border-bottom: none; position: relative; top: -5em; }
-html body.portfolio #navigation .container ul { list-style-type: none; }
-html body.portfolio #navigation .container ul li { display: inline-block; }
-html body.portfolio #navigation .container ul li.right { float: right; }
+html body.portfolio article h3 { display: none; }
+html body.portfolio article.image aside { position: relative; top: -20em; left: 20em; width: 20em; height: 0; }
+html body.portfolio article.image aside h3 { display: block; }
+html body.portfolio article.tablet figure, html body.portfolio article.desktop figure { position: relative; left: -16em; }
+html body.portfolio article.tablet aside, html body.portfolio article.desktop aside { left: 20em; top: -25em; }
+html body.portfolio article.desktop aside { left: 25em; top: -45em; }

@@ -18,6 +18,43 @@
         margin-bottom: $gutter;
       }
     }
+    
+    h3 {
+      display: none;
+    }
+    
+    &.image {
+      aside {
+        position: relative;
+        top: -20em;
+        left: 20em;
+        width: 20em;
+        height: 0;
+        
+        h3 {
+          display: block;
+        }
+      }
+    }
+    
+    &.tablet, &.desktop {
+      figure {
+        position: relative;
+        left: -16em;
+      }
+      
+      aside {
+        left: 20em;
+        top: -25em;
+      }
+    }
+    
+    &.desktop {
+      aside {
+        left: 25em;
+        top: -45em;
+      }
+    }
   }
 }
 
