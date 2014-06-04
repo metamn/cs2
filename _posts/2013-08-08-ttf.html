@@ -33,32 +33,25 @@ images:
   - url: /assets/images/smuff-desktop
     title: desktop
   - url: /assets/images/ttf-smartphone-1-naked.png
-    url-mobile: /assets/images/ttf-smartphone-1-naked.png
-    title: Simple and elegant mobile site
+    title: the propsal on mobile
     random: true
   - url: /assets/images/ttf-smartphone-2-naked.png
-    url-mobile: /assets/images/ttf-smartphone-2-naked.png
-    title: Mobile friendly Project Plan with Timeline
+    title: mobile friendly Project Plan with Timeline
   - url: /assets/images/ttf-tablet-naked.png
-    url-mobile: /assets/images/ttf-tablet-naked.png
-    title: Will that yellow background print?
-  - url: /assets/images/ttf-desktop-1.png
-    url-mobile: /assets/images/ttf-desktop-1-naked.png
-    title: Chrome has the best support printing websites
-  - url: /assets/images/ttf-desktop-2.png
-    url-mobile: /assets/images/ttf-desktop-2-naked.png
-    title: And voila! The website printed into a PDF.
+    title: will that yellow background print?
+  - url: /assets/images/ttf-desktop-2-naked.png
+    title: and voila! The website printed into a PDF.
 ---
 
 
 <article class="intro">
-  <h3>TTF</h3>
+  <h3>ttf</h3>
   
   <p>
-    The <a href="http://metamn.github.io/ttf" title="TTF">TTF</a> project proposal, beside putting together a world class team, was an experiment creating websites which simply print. 
+    Open Society Institution's Think Tank Fund was looking for a new agency for their future infographics, print and web projects.
   </p>
   <p>
-    And yes <mark>they really print</mark>.
+    we've put together an expert team &mdash; <a href="http://isabelmeirelles.com/" title="Isabel Meirelles">Isabel Meirelles</a> on infographics, <a href="http://reszeghbotond.ro" title="Botond Reszegh">Botond Reszegh</a> on print &mdash; and come up with an unique, all in one solution: <mark>websites which print.</mark> even with rich content like infographics.
   </p>
 </article>
 
@@ -69,7 +62,7 @@ images:
 
 
 <article class="image smartphone">
-  <h3>Frontpage on smartphone</h3>
+  <h3>responsiveness</h3>
   
   {% assign image_index = 2 %}
   {% include responsive-images.html type='from post' link="" %}
@@ -77,37 +70,49 @@ images:
 
 
 <article class="image smartphone">
-  <h3>Products page on smartphone</h3>
+  <h3>rich interactions</h3>
   
   {% assign image_index = 3 %}
   {% include responsive-images.html type='from post' link="" %}
+  
+  <aside>
+    <p>
+      by nature TTF projects are built on rich interactive components. we've did an extensive research, collected and tested all state-of-art open source libraries which are still responsive.
+    </p>
+  </aside>
 </article>
 
 
 <article class="image tablet">
-  <h3>Single product page on tablet</h3>
+  <h3>focus on print</h3>
   
   {% assign image_index = 4 %}
   {% include responsive-images.html type='from post' link="" %}
+  
+  <aside>
+    <p>
+      the main idea was to create the website in such way it can be printed anytime. we've carefully choose only those design elements which look the same on screen and paper.
+    </p>
+  </aside>
 </article>
 
 
 <article class="image desktop">
-  <h3>Frontpage on desktop</h3>
+  <h3>a website which prints</h3>
   
   {% assign image_index = 5 %}
   {% include responsive-images.html type='from post' link="" %}
-</article>
-
-
-<article class="image desktop">
-  <h3>Checkout page on desktop</h3>
   
-  {% assign image_index = 6 %}
-  {% include responsive-images.html type='from post' link="" %}
-  
-  <p>
-    <a href="{{ site.url }}/assets/images/OSF-TTF-Proposal.pdf" alt="The printed website">Click to see it live!</a>
-  </p>
+  <aside>
+    <p>
+      it turned out making a website to print is ... nothing more than designing it for a new device, which is the <mark>paper</mark> in this case.
+    </p>
+    <p>
+      using responsive design techniques and choosing the right layout, colors, typographic and design elements any website can be printed.
+    </p>
+    <p>
+      <a href="{{ page.link }}" title="{{ page.title }}">click to see it live</a> or <a href="{{ site.url }}/assets/images/OSF-TTF-Proposal.pdf" alt="The printed website">check the PDF.</a>
+    </p>
+  </aside>
 </article>
 
