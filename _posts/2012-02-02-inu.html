@@ -31,33 +31,26 @@ images:
   - url: /assets/images/inu-desktop-1.png
     title: Inu Chivu
   - url: /assets/images/inu-logo.png
-    url-mobile: /assets/images/inu-logo.png
-    title: desktop
+    title: dynamic and balanced
   - url: /assets/images/inu-smartphone-1-naked.png
-    url-mobile: /assets/images/inu-smartphone-1-naked.png
-    title: The mobile version especialy delighted the OCCRP board
+    title: the frontpage on mobile
     random: true
   - url: /assets/images/inu-smartphone-2-naked.png
-    url-mobile: /assets/images/inu-smartphone-2-naked.png
-    title: Main navigation is smart and strong on all devices
+    title: changing contrast
   - url: /assets/images/inu-tablet-1-naked.png
-    url-mobile: /assets/images/inu-tablet-1-naked.png
-    title: Content adapts to various screen estates
+    title: clean and simple navigation
   - url: /assets/images/inu-tablet-2-naked.png
-    url-mobile: /assets/images/inu-tablet-2-naked.png
-    title: Articles have many representations based on their subject
-    random: true
-  - url: /assets/images/inu-desktop.png
-    url-mobile: /assets/images/inu-desktop-naked.png
-    title: The frontpage adapts to both laptops and desktops
+    title: better overview
+  - url: /assets/images/inu-desktop-1.png
+    title: the frontpage on large screens
 ---
 
 
 <article class="intro">
-  <h3>Anvelocom</h3>
+  <h3>inu chivu</h3>
   
   <p>
-    <a href="http://anvelocom.ro" title="Anvelocom">Anvelocom</a> is a fast growing local e-commerce startup. They invested seriously in their website and became the leader of their niche.
+    <a href="{{ page.link }}" title="{{ page.title }}">Inu Chivu</a> is a photographer. He was stucked with his old, non-responsive website where images were uploaded manually via FTP
   </p>
 </article>
 
@@ -68,7 +61,7 @@ images:
 
 
 <article class="image smartphone">
-  <h3>Frontpage on smartphone</h3>
+  <h3>cross device compatibility</h3>
   
   {% assign image_index = 2 %}
   {% include responsive-images.html type='from post' link="" %}
@@ -76,31 +69,47 @@ images:
 
 
 <article class="image smartphone">
-  <h3>Products page on smartphone</h3>
+  <h3>usability</h3>
   
   {% assign image_index = 3 %}
   {% include responsive-images.html type='from post' link="" %}
+  
+  <aside>
+    <p>
+      sometimes dark background gives better contrast to enjoy images on the web. we've added a persistent contrast switcher solution to let people have better experience.
+    </p>
+  </aside>
 </article>
 
 
 <article class="image tablet">
-  <h3>Single product page on tablet</h3>
+  <h3>minimalism</h3>
   
   {% assign image_index = 4 %}
   {% include responsive-images.html type='from post' link="" %}
+  
+  <p>
+    we are presenting high quality photography with this portfolio. This made us to decide everything else will stay out of the viewers way. 
+  </p>
 </article>
 
 
 <article class="image tablet">
-  <h3>Frontpage on desktop</h3>
+  <h3>asymmetry</h3>
   
   {% assign image_index = 5 %}
   {% include responsive-images.html type='from post' link="" %}
+  
+  <aside>
+    <p>
+      when browsing images / image thumbnails the classic, uniformly aligned grid is boring. with a little asymmetry we can drive viewers to see all thumbnails at once without getting tired by the uniformity.
+    </p>
+  </aside>
 </article>
 
 
 <article class="image desktop">
-  <h3>Checkout page on desktop</h3>
+  <h3>nothing just the content</h3>
   
   {% assign image_index = 6 %}
   {% include responsive-images.html type='from post' link="" %}
@@ -109,7 +118,7 @@ images:
 
 
 <article class="logo">
-  <h3>The logo</h3>
+  <h3>the logo</h3>
   
   {% assign image_index = 1 %}
   {% include responsive-images.html type='from post' link="" %}
