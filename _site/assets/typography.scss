@@ -97,11 +97,19 @@ h1 {
   
   ol {
     list-style-type: decimal;
+    line-height: 1.5;
   }
   
   ul {
-    list-style-type: disc;
-    margin: $gutter $gutter - $gutter/4;
+    list-style-type: none;    
+    margin: $gutter 0;
+    
+    li {
+      &:before {
+        content: '\2014';
+        margin-right: $gutter/2;
+      }
+    }
   }
   
   dl {
@@ -127,24 +135,14 @@ h1 {
   }
   
   blockquote {
-    margin: $gutter 0;
-    padding: $gutter;
-    border: 1px solid $white;
-    width: calc(100% - #{$gutter * 2} - #{2px});
+    margin: $gutter*2 0 0;
     font-style: italic;
-    line-height: 1.5;
     font-weight: 400;
   }
 
   .blockquote-source {
-    position: relative;
-    float: right;
-    top: -$gutter*2 - $gutter/2;
-    right: $gutter;
-    
-    font-variant: small-caps;
-    font-size: smaller;
-    letter-spacing: 1.2px;
+    @include figcaption;  
+    margin-bottom: $gutter;
   }
   
   table {
