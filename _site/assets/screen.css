@@ -102,7 +102,7 @@ html body.article main .container blockquote, html body.portfolio main .containe
 html body.article main .container .blockquote-source, html body.portfolio main .container .blockquote-source { position: relative; float: right; top: -3.125em; right: 1.25em; font-variant: small-caps; font-size: smaller; letter-spacing: 1.2px; }
 html body.article main .container table, html body.portfolio main .container table { width: 100%; display: table !important; }
 html body.article main .container table thead th, html body.article main .container table tbody td, html body.portfolio main .container table thead th, html body.portfolio main .container table tbody td { padding: 0.625em; padding-left: 0; border-bottom: 1px solid white; }
-html body.article main .container mark, html body.portfolio main .container mark { color: #3a3a3a; background: #faafaf; padding: 0 0.3125em; }
+html body.article main .container mark, html body.portfolio main .container mark { color: #3a3a3a; background: #b9b9b9; padding: 0 0.3125em; }
 @media only screen and (max-width: 47.999em) { html body.article #contact, html body.portfolio #contact { margin-top: 0; } }
 html body.portfolio article figcaption { margin-left: 0.625em; }
 html body.portfolio article.services { margin: 5em 0; }
