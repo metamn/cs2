@@ -26,7 +26,7 @@ h1, h2, h3, h4 { font-size: larger; font-family: 'Old Standard TT', serif; }
 
 h4 { margin-top: 1.25em; }
 
-h3 { margin-top: 2.5em; margin-bottom: 1.25em; }
+h3 { margin-top: 2.5em; margin-bottom: 1.25em; font-style: italic; }
 
 h2 { margin-top: 3.75em; margin-bottom: 2.5em; }
 

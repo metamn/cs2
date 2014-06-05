@@ -9,20 +9,14 @@ technologies:
   - PHP
   - Wordpress
   - HTML5
-  - CSS3
   - jQuery
-  - SASS
-  - Compass
 categories:
   - agency
   - Back-end development
   - PHP
   - Wordpress
   - HTML5
-  - CSS3
   - jQuery
-  - SASS
-  - Compass
 images:
   - url: /assets/images/reboot-logo.png
     title: reboot, the social enterprise
@@ -51,74 +45,78 @@ images:
 {% include services.html %}
 
 
-<article class="image">
+<article class="image tablet">
   <h3>content design</h3>
   
   {% assign image_index = 0 %}
   {% include responsive-images.html type='from post' link="" %}
   
   <aside>
+    <h3>content design</h3>
     <p>
-      beside usual blog posts Reboot is dealing with complex case studies, team profile pages, work examples, multi-page mission statements &mdash; custom content Wordpress is not prepared yet.
+      beside blog posts Reboot is dealing with complex case studies, team profile pages, work examples, multi-page mission statements &mdash; custom content Wordpress is not supporting by default.
     </p>
     <p>
-      these metadata was stored into various, non-interconnected, individual plugins which made content administration a pain.
+      in the old website this metadata was stored into various, non-interconnected, individual plugins which made content administration a pain.
     </p>
     <p>
-      as a first task this extended content structure was redesigned to be Wordpress native by eliminating all plugins.
+      as a first task the content structure was redesigned to be Wordpress native by eliminating all plugins.
     </p>
   </aside>
 </article>
 
 
-<article class="image">
+<article class="image tablet">
   <h3>simple administration</h3>
   
   {% assign image_index = 1 %}
   {% include responsive-images.html type='from post' link="" %}
   
   <aside>
+    <h3>simple administration</h3>
     <p>
-      instead of content scattered through different administration pages we've created a single admin panel to manage all metadata.
+      we eliminated plugins by storing metadata in the default Wordpress database. this way anytime Wordpress is updated the data goes automatically with the update.  
     </p>
     <p>
-      in plus, all metadata was stored into the standard Wordpress database making it future proof. Anytime Wordpress is updated the data goes automatically with the update.  
+      when metadata is integrated with Wordpress defaults the Dashboard is also cleaned up. Instead of having many extensions the new version had just one.
     </p>
   </aside>
 </article>
 
 
-<article class="image">
+<article class="image tablet">
   <h3>plugin development</h3>
   
   {% assign image_index = 2 %}
   {% include responsive-images.html type='from post' link="" %}
   
   <aside>
+    <h3>plugin development</h3>
     <p>
       a single plugin was created to facilitate the input of metadata on all these screens where the default Wordpress functionality was not enough. 
     </p>
     <p>
       using native controls and integration into the original workflow Reboot editors could naturally add new content without extra visual and functional overhead.
     </p>
-    
-    {% assign image_index = 3 %}
-    {% include responsive-images.html type='from post' link="" %}
   </aside>
+  
+  {% assign image_index = 3 %}
+  {% include responsive-images.html type='from post' link="" %}
 </article>
 
-<article class="image">
+<article class="image desktop">
   <h3>theme development</h3>
   
   {% assign image_index = 4 %}
   {% include responsive-images.html type='from post' link="" %}
   
   <aside>
+    <h3>theme development</h3>
     <p>
-      once data was stored and made user-friendly & future proof the last step was to create a Wordpress theme to showcase how this metadata can be displayed using Wordpress functions.
+      the next step was to create a Wordpress theme to retrieve metadata and integrate into the design.
     </p>
     <p>
-      together with plugin usage a semantic HTML5 template was created to found the upcoming front-end development tasks for the new design.
+      a semantic HTML5 template was created as a foundation for the upcoming front-end development phase.
     </p>
   </aside>
 </article>
