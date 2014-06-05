@@ -67,9 +67,56 @@
       figure {
         left: -14em;
       }
+      
       aside {
         left: 27em;
         top: -45em;
+      }
+    }
+  }
+}
+
+
+
+@mixin reboot {
+  @include normal-screen-and-up {
+    article {
+      &.first {
+        aside {
+          top: -10em;
+        }
+        
+        figure {
+          left: -9em;
+          
+          img {
+            background: transparent;
+          }
+          
+          figcaption {
+            display: none;
+          }
+        }
+      }
+      
+      &.image {
+        aside {
+          left: 25em;
+        }
+      }
+    }
+  }
+  
+  @include large-screen {
+    article {
+      &.first {
+        margin-bottom: $grid-height;
+      }
+      
+      &.last {
+        aside {
+          top: -25em;
+        }
       }
     }
   }

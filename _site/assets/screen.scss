@@ -108,5 +108,9 @@ html {
     &.portfolio {
       @include portfolio-item;
     }
+    
+    &.reboot {
+      @include reboot;
+    }
   }
 }

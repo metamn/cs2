@@ -129,3 +129,11 @@ html body.portfolio article.logo-animated figure { width: 100%; float: left; mar
   html body.portfolio article.tablet aside { left: 25em; top: -25em; }
   html body.portfolio article.desktop figure { left: -14em; }
   html body.portfolio article.desktop aside { left: 27em; top: -45em; } }
+
+@media only screen and (min-width: 80em) { html body.reboot article.first aside { top: -10em; }
+  html body.reboot article.first figure { left: -9em; }
+  html body.reboot article.first figure img { background: transparent; }
+  html body.reboot article.first figure figcaption { display: none; }
+  html body.reboot article.image aside { left: 25em; } }
+@media only screen and (min-width: 90.001em) { html body.reboot article.first { margin-bottom: 5em; }
+  html body.reboot article.last aside { top: -25em; } }

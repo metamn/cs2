@@ -45,11 +45,9 @@ images:
 {% include services.html %}
 
 
-<article class="image tablet">
+<article class="image tablet first">
   <h3>content design</h3>
   
-  {% assign image_index = 0 %}
-  {% include responsive-images.html type='from post' link="" %}
   
   <aside>
     <h3>content design</h3>
@@ -99,12 +97,9 @@ images:
       using native controls and integration into the original workflow Reboot editors could naturally add new content without extra visual and functional overhead.
     </p>
   </aside>
-  
-  {% assign image_index = 3 %}
-  {% include responsive-images.html type='from post' link="" %}
 </article>
 
-<article class="image desktop">
+<article class="image desktop last">
   <h3>theme development</h3>
   
   {% assign image_index = 4 %}
