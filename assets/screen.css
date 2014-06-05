@@ -78,9 +78,10 @@ html body .container #navigation .container ul li { display: inline-block; }
 html body .container #navigation .container ul li.right { float: right; }
 html body.frontpage main, html body.older-projects main { width: 100%; float: left; }
 html body.frontpage main .container, html body.older-projects main .container { max-width: 36.875em; }
-html body.frontpage main .container article, html body.older-projects main .container article { margin-bottom: 1.25em; text-align: center; }
+html body.frontpage main .container article, html body.older-projects main .container article { margin-bottom: 1.25em; text-align: center; opacity: 0; }
 html body.frontpage main .container article h1, html body.frontpage main .container article figcaption, html body.older-projects main .container article h1, html body.older-projects main .container article figcaption { display: none; }
 html body.frontpage main .container article .category, html body.older-projects main .container article .category { text-align: center; font-size: smaller; }
+html body.frontpage main .container article:first-of-type, html body.older-projects main .container article:first-of-type { opacity: 1; }
 html body.older-projects h1 { display: none; }
 html body.article header, html body.article main, html body.article #navigation, html body.portfolio header, html body.portfolio main, html body.portfolio #navigation { width: 100%; float: left; }
 html body.article header .container, html body.article main .container, html body.article #navigation .container, html body.portfolio header .container, html body.portfolio main .container, html body.portfolio #navigation .container { max-width: 36.875em; }
@@ -103,7 +104,7 @@ html body.article main .container dl dt, html body.portfolio main .container dl 
 html body.article main .container dl dd, html body.portfolio main .container dl dd { margin-bottom: 0.625em; }
 html body.article main .container dl dd + dt, html body.portfolio main .container dl dd + dt { margin-top: 1.25em; }
 html body.article main .container .spacer, html body.portfolio main .container .spacer { width: 100%; float: left; margin-bottom: 1.25em; }
-html body.article main .container blockquote, html body.portfolio main .container blockquote { margin: 2.5em 0 0.3125em; font-style: italic; font-weight: 400; line-height: 1.5; }
+html body.article main .container blockquote, html body.portfolio main .container blockquote { margin: 2.5em 0 0.3125em; font-style: italic; font-weight: 400; }
 html body.article main .container .blockquote-source, html body.portfolio main .container .blockquote-source { font-style: italic; font-size: smaller; text-align: left; margin-bottom: 1.25em; margin-bottom: 1.25em; }
 html body.article main .container .blockquote-source:before, html body.portfolio main .container .blockquote-source:before { content: '\2014'; display: inline-block; margin-left: 1.25em; }
 @media only screen and (max-width: 47.999em) { html body.article main .container .blockquote-source:before, html body.portfolio main .container .blockquote-source:before { margin-left: 0; } }
@@ -116,6 +117,9 @@ html body.portfolio article aside h3 { display: none; }
 html body.portfolio article.services { margin: 5em 0; }
 html body.portfolio article.services h3 { display: none; }
 html body.portfolio article.logo-animated figure { width: 100%; float: left; margin-bottom: 1.25em; }
+html body.portfolio article.image { opacity: 0; }
+html body.portfolio article.image aside { opacity: 0; }
+html body.portfolio article:nth-of-type(3) { opacity: 1; }
 @media only screen and (min-width: 80em) { html body.portfolio article h3 { display: none; }
   html body.portfolio article aside h3 { display: block; }
   html body.portfolio article.image figure { position: relative; left: -10em; }

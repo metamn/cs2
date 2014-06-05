@@ -123,6 +123,22 @@
 }
 
 
+@mixin fade-in {
+  &.image {
+    // by default all articles are hidden and revealed on scroll
+    opacity: 0;
+    
+    aside {
+      // by default the story is hidden and becomes visible when all images are loaded
+      opacity: 0;
+    }
+  }
+  
+  &:nth-of-type(3) {
+    opacity: 1;
+  }
+}
+
 
 @mixin portfolio-item {
   article {
@@ -130,8 +146,10 @@
       margin-left: $gutter / 2;
     }
     
-    aside h3 {
-      display: none;
+    aside {
+      h3 {
+        display: none;
+      }
     }
     
     &.services {
@@ -148,6 +166,8 @@
         margin-bottom: $gutter;
       }
     }
+    
+    @include fade-in;
     
     @include normal-screen-and-up {
       @include asymmetric-portfolio-item;
@@ -195,6 +215,11 @@
   .category {
     text-align: center;
     font-size: smaller;
+  }
+  
+  opacity: 0;
+  &:first-of-type {
+    opacity: 1;
   }
 }
 

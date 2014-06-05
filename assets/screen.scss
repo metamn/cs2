@@ -10,11 +10,14 @@
 @import "grid";
 @import "typography";
 @import "decorations";
-@import "visual-grid";
 
+
+@import "visual-grid";
 #grid, #gravity {
   display: none;
 }
+
+
 
 html {
   body {
