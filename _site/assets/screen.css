@@ -112,12 +112,20 @@ html body.article main .container table thead th, html body.article main .contai
 html body.article main .container mark, html body.portfolio main .container mark { font-style: italic; background: transparent; color: #3a3a3a; }
 @media only screen and (max-width: 47.999em) { html body.article #contact, html body.portfolio #contact { margin-top: 0; } }
 html body.portfolio article figcaption { margin-left: 0.625em; }
+html body.portfolio article aside h3 { display: none; }
 html body.portfolio article.services { margin: 5em 0; }
 html body.portfolio article.services h3 { display: none; }
 html body.portfolio article.logo-animated figure { width: 100%; float: left; margin-bottom: 1.25em; }
-html body.portfolio article h3 { display: none; }
-html body.portfolio article.image aside { position: relative; top: -20em; left: 20em; width: 20em; height: 0; }
-html body.portfolio article.image aside h3 { display: block; }
-html body.portfolio article.tablet figure, html body.portfolio article.desktop figure { position: relative; left: -16em; }
-html body.portfolio article.tablet aside, html body.portfolio article.desktop aside { left: 20em; top: -25em; }
-html body.portfolio article.desktop aside { left: 25em; top: -45em; }
+@media only screen and (min-width: 80em) { html body.portfolio article h3 { display: none; }
+  html body.portfolio article aside h3 { display: block; }
+  html body.portfolio article.image figure { position: relative; left: -10em; }
+  html body.portfolio article.image aside { position: relative; top: -20em; left: 20em; width: 20em; height: 0; }
+  html body.portfolio article.tablet figure, html body.portfolio article.desktop figure { left: -16em; }
+  html body.portfolio article.tablet aside, html body.portfolio article.desktop aside { left: 30em; top: -25em; }
+  html body.portfolio article.desktop aside { left: 25em; top: -45em; } }
+@media only screen and (min-width: 80em) and (min-width: 90.001em) { html body.portfolio article.image figure { left: 0; }
+  html body.portfolio article.image aside { top: -20em; left: 20em; }
+  html body.portfolio article.tablet figure { left: -10em; }
+  html body.portfolio article.tablet aside { left: 25em; top: -25em; }
+  html body.portfolio article.desktop figure { left: -14em; }
+  html body.portfolio article.desktop aside { left: 27em; top: -45em; } }

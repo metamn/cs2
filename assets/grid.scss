@@ -29,7 +29,7 @@ body {
 $breakpoint-mobile: 30em; // 480px
 $breakpoint-tablet: 48em; // 768px
 $breakpoint-small-screen: 64em; // 1024px
-$breakpoint-normal-screen: 85.375em; // 1366px
+$breakpoint-normal-screen: 80em; // 1280px
 $breakpoint-large-screen: 90em; // 1440px
 
 
@@ -42,6 +42,12 @@ $breakpoint-large-screen: 90em; // 1440px
 
 @mixin tablet-and-up {
   @media only screen and (min-width: $breakpoint-tablet) {
+    @content
+  }
+}
+
+@mixin normal-screen-and-up {
+  @media only screen and (min-width: $breakpoint-normal-screen) {
     @content
   }
 }

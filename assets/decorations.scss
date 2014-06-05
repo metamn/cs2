@@ -1,7 +1,90 @@
+@mixin asymmetric-portfolio-item {
+  h3 {
+    display: none;
+  }
+  
+  aside h3 {
+    display: block;
+  }
+  
+  &.image {
+    figure {
+      position: relative;
+      left: -10em;
+    }
+    
+    aside {
+      position: relative;
+      top: -20em;
+      left: 20em;
+      width: 20em;
+      height: 0;
+    }
+  }
+  
+  &.tablet, &.desktop {
+    figure {
+      left: -16em;
+    }
+    
+    aside {
+      left: 30em;
+      top: -25em;
+    }
+  }
+  
+  &.desktop {
+    aside {
+      left: 25em;
+      top: -45em;
+    }
+  }
+  
+  @include large-screen {
+    &.image {
+      figure {
+        left: 0;
+      }
+      
+      aside {
+        top: -20em;
+        left: 20em;
+      }
+    }
+    
+    &.tablet {
+      figure {
+        left: -10em;
+      }
+      
+      aside {
+        left: 25em;
+        top: -25em;
+      }
+    }
+    
+    &.desktop {
+      figure {
+        left: -14em;
+      }
+      aside {
+        left: 27em;
+        top: -45em;
+      }
+    }
+  }
+}
+
+
+
 @mixin portfolio-item {
   article {
     figcaption {
       margin-left: $gutter / 2;
+    }
+    
+    aside h3 {
+      display: none;
     }
     
     &.services {
@@ -19,41 +102,8 @@
       }
     }
     
-    h3 {
-      display: none;
-    }
-    
-    &.image {
-      aside {
-        position: relative;
-        top: -20em;
-        left: 20em;
-        width: 20em;
-        height: 0;
-        
-        h3 {
-          display: block;
-        }
-      }
-    }
-    
-    &.tablet, &.desktop {
-      figure {
-        position: relative;
-        left: -16em;
-      }
-      
-      aside {
-        left: 20em;
-        top: -25em;
-      }
-    }
-    
-    &.desktop {
-      aside {
-        left: 25em;
-        top: -45em;
-      }
+    @include normal-screen-and-up {
+      @include asymmetric-portfolio-item;
     }
   }
 }
