@@ -41,7 +41,7 @@ images:
     title: clean and simple navigation
   - url: /assets/images/inu-tablet-2-naked.png
     title: better overview
-  - url: /assets/images/inu-desktop-1.png
+  - url: /assets/images/inu-desktop-2-naked.png
     title: the frontpage on large screens
 ---
 
@@ -50,7 +50,7 @@ images:
   <h1>inu chivu</h1>
   
   <p>
-    <a href="{{ page.link }}" title="{{ page.title }}">Inu Chivu</a> is a photographer. He was struggling with his old, non-responsive website where images were uploaded manually via FTP
+    <a href="{{ page.link }}" title="{{ page.title }}">Inu Chivu</a> is a photographer. He was struggling with his old, non-responsive website where images were uploaded manually via FTP.
   </p>
 </article>
 
@@ -68,6 +68,10 @@ images:
   
   <aside>
     <h3>cross device compatibility</h3>
+    
+    <p>
+      moving out the portfolio from the constraints of the Adobe Flash was in the same way important than moving out the site from desktop to all other devices.
+    </p>
   </aside>
 </article>
 
@@ -118,11 +122,18 @@ images:
 </article>
 
 
-<article class="mockup">
+<article class="image desktop">
   <h3>nothing just the content</h3>
   
   {% assign image_index = 6 %}
   {% include responsive-images.html type='from post' link="" %}
+  
+  <aside>
+    <h3>nothing just the content</h3>
+    <p>
+      and that's it.
+    </p>
+  </aside>
 </article>
 
 
@@ -132,6 +143,10 @@ images:
   
   {% assign image_index = 1 %}
   {% include responsive-images.html type='from post' link="" %}
+  
+  <aside>
+    <h3>the logo</h3>
+  </aside>
 </article>
 
 
