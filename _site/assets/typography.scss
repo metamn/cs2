@@ -1,6 +1,6 @@
 h1, h2, h3, h4 {
-  font-family: 'Old Standard TT', serif;
   font-size: larger;
+  font-family: 'Old Standard TT', serif;
 }
   
 h4 {
@@ -10,6 +10,7 @@ h4 {
 h3 {
   margin-top: $gutter * 2;
   margin-bottom: $gutter;
+  font-style: italic;
 }
 
 h2 {
@@ -26,6 +27,7 @@ h1 {
 
 
 @mixin title {
+  font-weight: 400;
   font-style: italic;
   font-family: 'Old Standard TT', serif;
 }
@@ -93,10 +95,11 @@ h1 {
   
   ol {
     list-style-type: decimal;
+    line-height: 1.5;
   }
   
   ul {
-    list-style-type: disc;
+    list-style-type: disc;    
     margin: $gutter $gutter - $gutter/4;
   }
   
@@ -105,6 +108,8 @@ h1 {
     
     dt {
       font-weight: bold;
+      font-style: italic;
+      letter-spacing: 1px;
     }
     
     dd {
@@ -122,24 +127,14 @@ h1 {
   }
   
   blockquote {
-    margin: $gutter 0;
-    padding: $gutter;
-    border: 1px solid $white;
-    width: calc(100% - #{$gutter * 2} - #{2px});
+    margin: $gutter*2 0 $gutter/4;
     font-style: italic;
     font-weight: 400;
-    line-height: 1.5;
   }
 
   .blockquote-source {
-    position: relative;
-    float: right;
-    top: -$gutter*2 - $gutter/2;
-    right: $gutter;
-    
-    font-variant: small-caps;
-    font-size: smaller;
-    letter-spacing: 1.2px;
+    @include figcaption;  
+    margin-bottom: $gutter;
   }
   
   table {
@@ -154,6 +149,8 @@ h1 {
   }
   
   mark {
-    @include color($background, $highlight);
+    font-style: italic;
+    background: transparent;
+    color: $color;
   }
 }

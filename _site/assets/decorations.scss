@@ -1,7 +1,163 @@
+@mixin asymmetric-portfolio-item {
+  h3 {
+    display: none;
+  }
+  
+  aside h3 {
+    display: block;
+  }
+  
+  &.image {
+    figure {
+      position: relative;
+      left: -10em;
+    }
+    
+    aside {
+      position: relative;
+      top: -20em;
+      left: 20em;
+      width: 20em;
+      height: 0;
+    }
+  }
+  
+  &.tablet, &.desktop {
+    figure {
+      left: -16em;
+    }
+    
+    aside {
+      left: 30em;
+      top: -25em;
+    }
+  }
+  
+  &.desktop {
+    aside {
+      left: 25em;
+      top: -45em;
+    }
+  }
+  
+  @include large-screen {
+    &.image {
+      figure {
+        left: 0;
+      }
+      
+      aside {
+        top: -20em;
+        left: 20em;
+      }
+    }
+    
+    &.tablet {
+      figure {
+        left: -10em;
+      }
+      
+      aside {
+        left: 25em;
+        top: -25em;
+      }
+    }
+    
+    &.desktop {
+      figure {
+        left: -14em;
+      }
+      
+      aside {
+        left: 27em;
+        top: -45em;
+      }
+    }
+  }
+}
+
+
+
+@mixin reboot {
+  @include normal-screen-and-up {
+    article {
+      &.first {
+        aside {
+          top: -10em;
+        }
+        
+        figure {
+          left: -9em;
+          
+          img {
+            background: transparent;
+          }
+          
+          figcaption {
+            display: none;
+          }
+        }
+      }
+      
+      &.image {
+        aside {
+          left: 25em;
+        }
+      }
+    }
+  }
+  
+  @include large-screen {
+    article {
+      &.first {
+        margin-bottom: $grid-height;
+      }
+      
+      &.last {
+        aside {
+          top: -25em;
+        }
+      }
+    }
+  }
+}
+
+
+@mixin fade-in {
+  &.image {
+    // by default all articles are hidden and revealed on scroll
+    opacity: 0;
+    
+    aside {
+      // by default the story is hidden and becomes visible when all images are loaded
+      opacity: 0;
+    }
+  }
+  
+  &:nth-of-type(3) {
+    opacity: 1;
+  }
+}
+
+
 @mixin portfolio-item {
   article {
     figcaption {
+      margin-left: $gutter / 2;
+    }
+    
+    aside {
+      h3 {
+        display: none;
+      }
+    }
+    
+    &.services {
+      margin: $grid-height 0;
       
+      h3 {
+        display: none;
+      }
     }
     
     &.logo-animated {
@@ -9,6 +165,12 @@
         @include block;
         margin-bottom: $gutter;
       }
+    }
+    
+    @include fade-in;
+    
+    @include normal-screen-and-up {
+      @include asymmetric-portfolio-item;
     }
   }
 }
@@ -29,6 +191,8 @@
     top: -$grid-height;
           
     ul {
+      list-style-type: none;
+      
       li {
         display: inline-block;
         
@@ -51,6 +215,11 @@
   .category {
     text-align: center;
     font-size: smaller;
+  }
+  
+  opacity: 0;
+  &:first-of-type {
+    opacity: 1;
   }
 }
 

@@ -8,7 +8,8 @@
     
     <!-- Compass with SASS -->
   	<link href="/assets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
-    <link href="/assets/smuff-logo.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    
+    
     
     <!--[if lt IE 9]>
         <link href="/assets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
@@ -22,7 +23,7 @@
     <![endif]-->
     
     
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,300italic,400italic|Old+Standard+TT:400,400italic,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,300italic,400italic,700italic|Old+Standard+TT:700,400,400italic' rel='stylesheet' type='text/css'>
     
     <!-- Picturefill Responsive Images -->
     <script type="text/javascript" src="/assets/matchmedia.js"></script>
@@ -55,11 +56,169 @@
 
 <main id="main">
   <div class="container">
-    Artist Damien Hirst commissioned Bureau to design and build the online website and archive. The site features truly mesmerising live video from his workshops, which allows the user to watch the creation of the artworks in real-time. Furthermore, the website enables high-resolution zoom into some to the artist's most important works.  
+    <article class="intro">
+  <h1>reboot</h1>
+  
+  <p>
+    <a href="http://reboot.org" title="Reboot">reboot</a> is an interesting startup designing and developing social contracts worldwide.
+  </p>
+  <p>
+    when redesigning their old website they've migrated also their Wordpress backend to support their rich content structures.
+  </p>
+</article>
 
+<article class="services">
+  <h3>Services</h3>
+  
+  <dl>
+    <dt>services</dt>
+    <dd>back-end development</dd>
+    
+    <dt>technologies</dt>
+    <dd>php, wordpress, html5, and jquery</dd>
+  </dl>
+</article>
+
+
+<article class="image tablet first">
+  <h3>content design</h3>
+  
+  
+  <aside>
+    <h3>content design</h3>
+    <p>
+      beside blog posts Reboot is dealing with complex case studies, team profile pages, work examples, multi-page mission statements &mdash; custom content Wordpress is not supporting by default.
+    </p>
+    <p>
+      in the old website this metadata was stored into various, non-interconnected, individual plugins which made content administration a pain.
+    </p>
+    <p>
+      as a first task the content structure was redesigned to be Wordpress native by eliminating all plugins.
+    </p>
+  </aside>
+</article>
+
+
+<article class="image tablet">
+  <h3>simple administration</h3>
+  
+  
+  
+
+
+<figure>
+  
+
+  <div class="image-placeholder" data-picture data-alt="the new dashboard with a single extension">
+    <div data-src="/assets/images/reboot-dashboard.png"></div>
+    <div data-src="/assets/images/reboot-dashboard-small.png" data-media="(max-width: 768px)"></div>
+    <noscript>
+      <img src="/assets/images/reboot-dashboard.png" alt="the new dashboard with a single extension">
+    </noscript>
+  </div>
+    
+  
+  
+  <figcaption>
+    
+    the new dashboard with a single extension
+    
+  </figcaption>
+</figure>
+
+  
+  <aside>
+    <h3>simple administration</h3>
+    <p>
+      we eliminated plugins by storing metadata in the default Wordpress database. this way anytime Wordpress is updated the data goes automatically with the update.  
+    </p>
+    <p>
+      when metadata is integrated with Wordpress defaults the Dashboard is also cleaned up. Instead of having many extensions the new version had just one.
+    </p>
+  </aside>
+</article>
+
+
+<article class="image tablet">
+  <h3>plugin development</h3>
+  
+  
+  
+
+
+<figure>
+  
+
+  <div class="image-placeholder" data-picture data-alt="a single place to enter metadata">
+    <div data-src="/assets/images/reboot-case-study.png"></div>
+    <div data-src="/assets/images/reboot-case-study-small.png" data-media="(max-width: 768px)"></div>
+    <noscript>
+      <img src="/assets/images/reboot-case-study.png" alt="a single place to enter metadata">
+    </noscript>
+  </div>
+    
+  
+  
+  <figcaption>
+    
+    a single place to enter metadata
+    
+  </figcaption>
+</figure>
+
+  
+  <aside>
+    <h3>plugin development</h3>
+    <p>
+      a single plugin was created to facilitate the input of metadata on all these screens where the default Wordpress functionality was not enough. 
+    </p>
+    <p>
+      using native controls and integration into the original workflow Reboot editors could naturally add new content without extra visual and functional overhead.
+    </p>
+  </aside>
+</article>
+
+<article class="image desktop last">
+  <h3>theme development</h3>
+  
+  
+  
+
+
+<figure>
+  
+
+  <div class="image-placeholder" data-picture data-alt="easy data retrieval">
+    <div data-src="/assets/images/reboot-plugin.png"></div>
+    <div data-src="/assets/images/reboot-plugin-small.png" data-media="(max-width: 768px)"></div>
+    <noscript>
+      <img src="/assets/images/reboot-plugin.png" alt="easy data retrieval">
+    </noscript>
+  </div>
+    
+  
+  
+  <figcaption>
+    
+    easy data retrieval
+    
+  </figcaption>
+</figure>
+
+  
+  <aside>
+    <h3>theme development</h3>
+    <p>
+      the next step was to create a Wordpress theme to retrieve metadata and integrate into the design.
+    </p>
+    <p>
+      a semantic HTML5 template was created as a foundation for the upcoming front-end development phase.
+    </p>
+  </aside>
+</article>
   </div>
   
-  <!-- <nav id="navigation">
+  <nav id="navigation">
   <div class="container">
     <h3>Navigation</h3>
     <ul>
@@ -75,7 +234,7 @@
       </li>
     </ul>
   </div>
-</nav> -->
+</nav>
 </main>
 
 
@@ -118,11 +277,12 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('/assets/jquery-1.10.2.min.js">\x3C/script>')</script>
 
-<!-- Site specific scripts built on jQuery -->
+<!-- Site specific scripts  -->
 <script src="/assets/jquery.init.js"></script>
 
+
+
 <script type="text/javascript" src="/assets/jquery.visual.grid.js"></script>
-<script type="text/javascript" src="/assets/jquery.smuff.js"></script>
 
 </body>
 </html>
