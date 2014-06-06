@@ -8,7 +8,7 @@ $(document).ready(function() {
   $(window).scroll(function () {
 
     /* Check the location of each desired element */
-    $('.portfolio main article.image, .frontpage main article').each(function (i) {
+    $('.portfolio main article.image, .frontpage main article, .older-projects main article').each(function (i) {
       var middle_of_object = $(this).position().top + $(this).outerHeight() / 2;
       var bottom_of_window = $(window).scrollTop() + $(window).height();
 

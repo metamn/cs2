@@ -82,7 +82,7 @@ html body.frontpage main .container article, html body.older-projects main .cont
 html body.frontpage main .container article h1, html body.frontpage main .container article figcaption, html body.older-projects main .container article h1, html body.older-projects main .container article figcaption { display: none; }
 html body.frontpage main .container article .category, html body.older-projects main .container article .category { text-align: center; font-size: smaller; }
 html body.frontpage main .container article:first-of-type, html body.older-projects main .container article:first-of-type { opacity: 1; }
-html body.older-projects h1 { display: none; }
+html body.older-projects figure img { background: transparent !important; padding-bottom: 0 !important; }
 html body.article header, html body.article main, html body.article #navigation, html body.portfolio header, html body.portfolio main, html body.portfolio #navigation { width: 100%; float: left; }
 html body.article header .container, html body.article main .container, html body.article #navigation .container, html body.portfolio header .container, html body.portfolio main .container, html body.portfolio #navigation .container { max-width: 36.875em; }
 @media only screen and (min-width: 48em) { html body.article main, html body.portfolio main { color: #3a3a3a; background: #f1f1f1; }
