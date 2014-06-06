@@ -1,7 +1,29 @@
 ---
 layout: article
 title: Delivering the message
+images:
+  - url: /assets/images/smuff-product-thumb-1.png
+    title: the Smuff product thumb
+  - url: /assets/images/smuff-product-thumbs-1.png
+    title: the Smuff product thumbs
+  - url: /assets/images/fit-screen-ballpark.png
+    title: screenshot of the entire page
+  - url: /assets/images/fit-screen-ballpark-1a.png
+    title: screenshot of the first section of the page as seen on a 1366x768px screen
+  - url: /assets/images/fit-screen-ballpark-2.png
+    title: the second section
+  - url: /assets/images/fit-screen-smuff-1.png
+    title: the Smuff frontpage, top section
+  - url: /assets/images/fit-screen-smuff-2.png
+    title: the Smuff product page, top section
+  - url: /assets/images/fit-screen-smuff-3.png
+    title: the Smuff checkout page on a single screen
+  - url: /assets/images/focus-points.png
+    title: the Smuff product page with the five focus points
 ---
+
+
+  
 
 <article>
   <h1>
@@ -17,8 +39,8 @@ title: Delivering the message
     <li><a href="#ch1">design around the message</a></li>
     <li><a href="#ch2">fit to screen</a></li>
     <li><a href="#ch3">focus points</a></li>
-    <li><a href="#ch5">reuse</a></li>
-    <li><a href="#ch6">summary</a></li>
+    <li><a href="#ch4">reuse</a></li>
+    <li><a href="#ch5">summary</a></li>
   </ol>
   
   <h2 id="ch1">1. design around the message</h2>
@@ -40,11 +62,10 @@ title: Delivering the message
   <p>
     guess what will the main design element be? Driving the entire site design? And what message will transmit?
   </p>
+  
+  {% assign image_index = 0 %}
+  {% include responsive-images.html type='from post' link="http://www.smuff.ro/cadouri/cadouri-traznite" small='true' %}
 
-  <figure>
-    <a href="http://www.smuff.ro/cadouri/cadouri-traznite" title="Smuff">
-      <img src="{{ site.url }}/assets/images/smuff-product-thumb-1.png" alt="Smuff product thumbs"></a>
-  </figure>
   
   
   <h3>the smuff product thumb</h3>
@@ -54,11 +75,9 @@ title: Delivering the message
     <li>does it make you happy?</li>
     <li>is it techy / geeky / cool?</li>
   </ol>
-
-  <figure>
-    <a href="http://www.smuff.ro" title="Smuff"><img src="{{ site.url }}/assets/images/smuff-product-thumbs-1.png" alt="Smuff product thumbs"></a>
-  </figure>
   
+  {% assign image_index = 1 %}
+  {% include responsive-images.html type='from post' link="http://www.smuff.ro/" small='true' %}
 
   <p>
     the most important design elements of the page should engage the visitor to feel happy, cool, and powerful.
@@ -75,28 +94,16 @@ title: Delivering the message
     design should fit the screen. Long pages should be divided visually into smaller sections. On scrolling each new section should fit the screen.  
   </p>
   
-  <figure class="border">
-    <a href="http://www.getballpark.com/" title="Ballpark"><img src="{{ site.url }}/assets/images/fit-screen-ballpark.png" alt="Fit to screen"></a>
-    <figcaption>
-      screenshot of the entire page.
-    </figcaption>
-  </figure>
+  {% assign image_index = 2 %}
+  {% include responsive-images.html type='from post' link="" small='true' %}
+  
+  {% assign image_index = 3 %}
+  {% include responsive-images.html type='from post' link="" small='true' %}
+  
+  {% assign image_index = 4 %}
+  {% include responsive-images.html type='from post' link="" small='true' %}
   
   
-  <figure class="border">
-    <a href="http://www.getballpark.com/" title="Ballpark"><img src="{{ site.url }}/assets/images/fit-screen-ballpark-1a.png" alt="Fit to screen"></a>
-    <figcaption>
-      screenshot of the first section of the page as seen on a 1366x768px screen.
-    </figcaption>
-  </figure>
-  
-  
-  <figure class="border">
-    <a href="http://www.getballpark.com/" title="Ballpark"><img src="{{ site.url }}/assets/images/fit-screen-ballpark-2.png" alt="Fit to screen"></a>
-    <figcaption>
-      the second section.
-    </figcaption>
-  </figure>
   
   
   <p class="spacer"></p>
@@ -111,41 +118,28 @@ title: Delivering the message
   
   <p class="spacer"></p>
   
-  <figure>
-    <a href="http://www.smuff.ro" title="Smuff"><img src="{{ site.url }}/assets/images/fit-screen-smuff-1.png" alt="Smuff frontpage"></a>
-    <figcaption>
-      the Smuff frontpage, top section.
-    </figcaption>
-  </figure>
+  {% assign image_index = 5 %}
+  {% include responsive-images.html type='from post' link="" small='true' %}
   
+  {% assign image_index = 6 %}
+  {% include responsive-images.html type='from post' link="" small='true' %}
   
-  <figure>
-    <a href="http://www.smuff.ro/2012/12/12/pebble-smartstick-energie-pentru-smartphone-uri" title="Smuff"><img src="{{ site.url }}/assets/images/fit-screen-smuff-2.png" alt="Smuff product page"></a>
-    <figcaption>
-      the Smuff product page, top section.
-    </figcaption>
-  </figure>
-  
-  
-  <figure>
-    <a href="http://www.smuff.ro" title="Smuff"><img src="{{ site.url }}/assets/images/fit-screen-smuff-3.png" alt="Smuff checkout page"></a>
-    <figcaption>
-      the Smuff checkout page on a single screen.
-    </figcaption>
-  </figure>
-  
-  
+  {% assign image_index = 7 %}
+  {% include responsive-images.html type='from post' link="" small='true' %}
   
   
   
   
   <h2 id="ch3">3. focus points</h2>
   <p>
-    jakob Nielsen, one of the most important usability experts narrows down perfectly in <a href="http://www.nngroup.com/articles/113-design-guidelines-homepage-usability/">Design Guidelines for Homepage Usability</a>:
+    jakob Nielsen, one of the most important usability experts narrows down perfectly: 
     
     <blockquote>
-      visitors can focus only on five things on a single page.
+      "visitors can focus only on five things on a single page"
     </blockquote>
+    <p class="blockquote-source">
+      <a href="http://www.nngroup.com/articles/113-design-guidelines-homepage-usability/">Design Guidelines for Homepage Usability</a>
+    </p>
   </p>
   
   
@@ -197,15 +191,9 @@ title: Delivering the message
   </p>
   
   <p class="spacer"></p>
-  
-  <figure>
-    <a href="http://www.smuff.ro/2012/12/12/pebble-smartstick-energie-pentru-smartphone-uri"  title="Smuff"><img src="{{ site.url }}/assets/images/focus-points.png" alt="Smuff product page"></a>
-    <figcaption>
-      the Smuff product page with the five focus points.
-    </figcaption>
-  </figure>
-  
-  
+
+  {% assign image_index = 8 %}
+  {% include responsive-images.html type='from post' link="" small='true' %}
   
   
   

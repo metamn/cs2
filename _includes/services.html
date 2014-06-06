@@ -2,10 +2,10 @@
   <h3>Services</h3>
   
   <dl>
-    <dt>Services</dt>
-    <dd>{{ page.services | array_to_sentence_string }}</dd>
+    <dt>services</dt>
+    <dd>{{ page.services | array_to_sentence_string | downcase }}</dd>
     
-    <dt>Technologies</dt>
-    <dd>{{ page.technologies | array_to_sentence_string }}</dd>
+    <dt>technologies</dt>
+    <dd>{{ page.technologies | array_to_sentence_string | downcase }}</dd>
   </dl>
 </article>

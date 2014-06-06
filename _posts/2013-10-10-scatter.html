@@ -33,35 +33,24 @@ images:
   - url: /assets/images/scatter-desktop-1.png
     title: Scatter
   - url: /assets/images/scatter-logo.png
-    url-mobile: /assets/images/scatter-logo.png
-    title: desktop
+    title: the Scatter logo
   - url: /assets/images/scatter-smartphone-1-naked.png
-    url-mobile: /assets/images/scatter-smartphone-1-naked.png
-    title: The Scatter frontpage on mobile
+    title: the Scatter frontpage on mobile
   - url: /assets/images/scatter-smartphone-2-naked.png
-    url-mobile: /assets/images/scatter-smartphone-2-naked.png
-    title: The Scatter frontpage for Businesses on mobile
+    title: the Scatter frontpage for Businesses on mobile
   - url: /assets/images/scatter-tablet-naked.png
-    url-mobile: /assets/images/scatter-tablet-naked.png
-    title: The pricing page on tablet
-  - url: /assets/images/scatter-desktop-1.png
-    url-mobile: /assets/images/scatter-desktop-1-naked.png
-    title: Delivering the message on desktops & laptops
-    random: true
-  - url: /assets/images/scatter-desktop-2.png
-    url-mobile: /assets/images/scatter-desktop-2-naked.png
-    title: Single-screen presentation of features on desktop & laptop
+    title: the pricing page on tablet
+  - url: /assets/images/scatter-desktop-1-naked.png
+    title: a slide on desktop screen
 ---
 
 
 <article class="intro">
-  <h3>Scatter</h3>
+  <h1>scatter</h1>
   
   <p>
-    Scatter is a local deals & advertising <mark>startup</mark> bringing offers near to you.
-  </p>
-  <p>
-    My task was to create a series of landing pages <a href="" title"">which deliver the message.</a>
+    <a href="{{ page.link }}" title="{{ page.title }}">scatter</a> is a local deals & advertising startup bringing offers near to you.
+    my task was to create a series of landing pages which deliver the message.
   </p>
 </article>
 
@@ -69,51 +58,85 @@ images:
 
 
 <article class="image smartphone">
-  <h3>Frontpage on smartphone</h3>
+  <h3>responsive & sliding</h3>
   
   {% assign image_index = 2 %}
   {% include responsive-images.html type='from post' link="" %}
+  
+  <aside>
+    <h3>responsive & sliding</h3>
+    <p>
+      the founders wanted a presentation-like solution: one message at once per screen and sliding navigation.
+    </p>
+    <p>
+      making this requirement work on all devices was the technical challenge of this project.
+    </p>
+  </aside>
 </article>
 
 
 <article class="image smartphone">
-  <h3>Products page on smartphone</h3>
+  <h3>big typography</h3>
   
   {% assign image_index = 3 %}
   {% include responsive-images.html type='from post' link="" %}
+  
+  <aside>
+    <h3>big typography</h3>
+    <p>
+      every major feature of Scatter needed to presented in a single sentence. Using big typography taking as much screen estate as possible created the necessary impact. 
+    </p>
+  </aside>
 </article>
 
 
 <article class="image tablet">
-  <h3>Single product page on tablet</h3>
+  <h3>lean design</h3>
   
   {% assign image_index = 4 %}
-  {% include responsive-images.html type='from post' link="" %}
+  {% include responsive-images.html type='from post' link="" small='true' %}
+  
+  <aside>
+    <h3>lean design</h3>
+    <p>
+      through the design process we've used and reused a single design element&mdash;the rounded border&mdash;coming from the first letter of the Scatter logo.
+    </p>
+    <p>
+      re-using components makes the design fit and the experience seamless.
+    </p>
+  </aside>
 </article>
 
 
 <article class="image desktop">
-  <h3>Frontpage on desktop</h3>
+  <h3>big background images</h3>
   
   {% assign image_index = 5 %}
-  {% include responsive-images.html type='from post' link="" %}
-</article>
-
-
-<article class="image desktop">
-  <h3>Checkout page on desktop</h3>
+  {% include responsive-images.html type='from post' link="" small='true' %}
   
-  {% assign image_index = 6 %}
-  {% include responsive-images.html type='from post' link="" %}
+  <aside>
+    <h3>big background images</h3>
+    <p>
+      since Scatter has their app ready we could create perfect background images featuring screenshots of their real product.
+    </p>
+    <p>
+      big background images together with big typography became a very effective presentation tool.
+    </p>
+  </aside>
 </article>
-
 
 
 <article class="logo">
-  <h3>The logo</h3>
+  <h3>the logo</h3>
   
   {% assign image_index = 1 %}
-  {% include responsive-images.html type='from post' link="" %}
+  {% include responsive-images.html type='from post' link="" small='true' %}
+  
+  <aside>
+    <p>
+      made with HTML and CSS only.
+    </p>
+  </aside>
 </article>
 
 

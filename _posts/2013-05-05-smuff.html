@@ -38,16 +38,18 @@ images:
   - url: /assets/images/smuff-logo.png
     url-mobile: /assets/images/smuff-logo.png
     title: desktop
-  - url: /assets/images/smuff-smartphone-1-naked.png
+  - url: /assets/images/smuff-smartphone-naked.png
     title: the Smuff frontpage on mobiles
   - url: /assets/images/smuff-smartphone-1-naked.png
     title: the Smuff category page on mobiles
   - url: /assets/images/smuff-tablet-naked.png
     title: the single product page on tablets
-  - url: /assets/images/smuff-desktop-1-naked.png
-    title: the frontpage on desktops & laptops
+  - url: /assets/images/focus-points.png
+    title: the five focus points on the Smuff product page
   - url: /assets/images/smuff-desktop-2-naked.png
     title: the one page checkout at Smuff
+  - url: /assets/images/smuff-desktop-3-naked.png
+    title: techy / geeky / cool
 ---
 
 
@@ -55,21 +57,24 @@ images:
   <h1>smuff</h1>
     
   <p>
-    smuff is a simple and elegant e-commerce website designed to convert visitors into customers.
+    <a href="{{ page.link }}" title="{{ page.title }}">smuff</a> is a simple and elegant e-commerce website designed to convert visitors into customers.
   </p>
   <p>
     and yes we've managed to make <mark>44%</mark> of customers coming back.
   </p>
 </article>
 
+{% include services.html %}
+
 
 <article class="image smartphone">
-  <h3>responsive</h3>
+  <h3>responsiveness</h3>
     
   {% assign image_index = 2 %}
   {% include responsive-images.html type='from post' link="" %}
   
   <aside>
+    <h3>responsiveness</h3>
     <p>
       despite working with Smuff since 2006 the fully responsive version of their website come alive in 2013.
     </p>
@@ -91,6 +96,7 @@ images:
   {% include responsive-images.html type='from post' link="" %}
   
   <aside>
+    <h3>content discipline</h3>
     <p>
       to make the website perfectly aligned we've employed content discipline.
     </p>
@@ -110,15 +116,16 @@ images:
   <h3>selling images</h3>
   
   {% assign image_index = 4 %}
-  {% include responsive-images.html type='from post' link="" %}
+  {% include responsive-images.html type='from post' link="" small='true' %}
   
   <aside>
+    <h3>selling images</h3>
     <p>
-      we've realized early we are selling first of all images, <em>and</em>, according to Google Analytics product pages take 70% of all visits.
+      we've realized early we are selling first of all images. In plus, according to Google Analytics product pages take 70% of all visits.
     </p>
     
     <p>
-      these findings combined together made to design a product page which displays the biggest product images possible and still leave a room for thumbnail navigation to present the product from different point of views.
+      these findings combined together made us to design a product page which displays the biggest product images possible together with thumbnail navigation to present the product from different point of views.
     </p>
   </aside>
 </article>
@@ -128,15 +135,15 @@ images:
   <h3>focus points</h3>
   
   {% assign image_index = 5 %}
-  {% include responsive-images.html type='from post' link="" %}
+  {% include responsive-images.html type='from post' link="" small='true' %}
   
   <aside>
+    <h3>focus points</h3>
     <p>
-      we knew Smuff products are techy / geeky / cool and make people feel happy. And let the design stand out of the way by elevating the product thumbnail as the most important design element. 
+      visitors can focus only on five things in a single page. we've implemented these focus points to drive visitors attention to the right action and to keep them on site.
     </p>
-    
     <p>
-      the redesigned logo reflects the geekness of the site and that single orange color enhances the hapiness.
+      you can understand better how we increased conversion with Smuff in a short <a href="{{ site.url }}/message" title="Delivering the message">case study.</a>
     </p>
   </aside>
 </article>
@@ -146,19 +153,38 @@ images:
   <h3>single page, single click checkout</h3>
   
   {% assign image_index = 6 %}
-  {% include responsive-images.html type='from post' link="" %}
+  {% include responsive-images.html type='from post' link="" small='true' %}
   
   <aside>
+    <h3>single page, single click checkout</h3>
     <p>
       we've put major focus on designing the checkout page.
-      Studies show vistors drop shopping most likely at this last stage. 
+      Studies show visitors drop shopping most likely at this last stage. 
     </p>
     
     <p>
       we've managed to create a single page checkout where returning users are <em>one click away from purchase</em>.
     </p>
     <p>
-      new users have just a single additional step, the registration. Which is either a click on "Connect with Facebeook" or filling four fileds in a form. Without leaving the checkout screen.
+      new users have just a single additional step, the registration with a click on "Connect with Facebeook" or filling out a short form without leaving the checkout screen.
+    </p>
+  </aside>
+</article>
+
+
+<article class="image desktop">
+  <h3>design for happiness</h3>
+  
+  {% assign image_index = 7 %}
+  {% include responsive-images.html type='from post' link="" small='true'%}
+  
+  <aside>
+    <h3>design for happiness</h3>
+    <p>
+      selling gifts is a happy business: your customers are happy by default.
+    </p>
+    <p>
+      and we had good time to create such an identity and website for Smuff based on their product images, orange strapline, and a geeky animated logo.
     </p>
   </aside>
 </article>
@@ -173,10 +199,13 @@ images:
   
   <aside>
     <p>
-       and finally the logo which was hand crafted using HTML, CSS and Javascript animation. Hover the logo (or click) to see in action.
+       the logo which was hand crafted using HTML, CSS and Javascript animation. <mark>Hover</mark> the logo (or <mark>click</mark>) to see in action.
     </p>
   </aside>
 </article>
+
+
+
 
 
 

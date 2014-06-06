@@ -10,11 +10,14 @@
 @import "grid";
 @import "typography";
 @import "decorations";
-@import "visual-grid";
 
+
+@import "visual-grid";
 #grid, #gravity {
   display: none;
 }
+
+
 
 html {
   body {
@@ -52,9 +55,13 @@ html {
           @include button;
         }
       }
+      
+      #navigation {
+        @include navigation;
+      }
     }
   
-    &.frontpage, &.older {
+    &.frontpage, &.older-projects {
       main {
         @include column($text-grid-width + $text-grid-width / 2);
         
@@ -66,9 +73,16 @@ html {
         }
       }
     }
+    
+    &.older-projects {
+      figure img {
+        background: transparent !important;
+        padding-bottom: 0 !important;
+      }
+    }
   
     
-    &.article {
+    &.article, &.portfolio {
       header, main, #navigation {
         @include column($text-grid-width + $text-grid-width / 2);
       }
@@ -93,6 +107,14 @@ html {
           margin-top: 0;
         }
       }
+    }
+    
+    &.portfolio {
+      @include portfolio-item;
+    }
+    
+    &.reboot {
+      @include reboot;
     }
   }
 }

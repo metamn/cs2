@@ -1,13 +1,117 @@
 ---
 layout: portfolio
 title: Reboot
-link: http://reboot.org
-class: page
-excerpt: Identity, Responsive web design, Front-end development, Back-end development, Wordpress
 type: agency
+link: http://reboot.org
+services:
+  - Back-end development
+technologies:
+  - PHP
+  - Wordpress
+  - HTML5
+  - jQuery
+categories:
+  - agency
+  - Back-end development
+  - PHP
+  - Wordpress
+  - HTML5
+  - jQuery
 images:
   - url: /assets/images/reboot-logo.png
-    title: Reboot
+    title: reboot, the social enterprise
+  - url: /assets/images/reboot-dashboard.png
+    title: the new dashboard with a single extension
+  - url: /assets/images/reboot-case-study.png
+    title: a single place to enter metadata
+  - url: /assets/images/reboot-format.png
+    title: seamless integration
+  - url: /assets/images/reboot-plugin.png
+    title: easy data retrieval
 ---
 
-Artist Damien Hirst commissioned Bureau to design and build the online website and archive. The site features truly mesmerising live video from his workshops, which allows the user to watch the creation of the artworks in real-time. Furthermore, the website enables high-resolution zoom into some to the artist's most important works.  
+
+<article class="intro">
+  <h1>reboot</h1>
+  
+  <p>
+    <a href="http://reboot.org" title="Reboot">reboot</a> is an interesting startup designing and developing social contracts worldwide.
+  </p>
+  <p>
+    when redesigning their old website they've migrated also their Wordpress backend to support their rich content structures.
+  </p>
+</article>
+
+{% include services.html %}
+
+
+<article class="image tablet first">
+  <h3>content design</h3>
+  
+  
+  <aside>
+    <h3>content design</h3>
+    <p>
+      beside blog posts Reboot is dealing with complex case studies, team profile pages, work examples, multi-page mission statements &mdash; custom content Wordpress is not supporting by default.
+    </p>
+    <p>
+      in the old website this metadata was stored into various, non-interconnected, individual plugins which made content administration a pain.
+    </p>
+    <p>
+      as a first task the content structure was redesigned to be Wordpress native by eliminating all plugins.
+    </p>
+  </aside>
+</article>
+
+
+<article class="image tablet">
+  <h3>simple administration</h3>
+  
+  {% assign image_index = 1 %}
+  {% include responsive-images.html type='from post' link=""  small='true' %}
+  
+  <aside>
+    <h3>simple administration</h3>
+    <p>
+      we eliminated plugins by storing metadata in the default Wordpress database. this way anytime Wordpress is updated the data goes automatically with the update.  
+    </p>
+    <p>
+      when metadata is integrated with Wordpress defaults the Dashboard is also cleaned up. Instead of having many extensions the new version had just one.
+    </p>
+  </aside>
+</article>
+
+
+<article class="image tablet">
+  <h3>plugin development</h3>
+  
+  {% assign image_index = 2 %}
+  {% include responsive-images.html type='from post' link="" small='true' %}
+  
+  <aside>
+    <h3>plugin development</h3>
+    <p>
+      a single plugin was created to facilitate the input of metadata on all these screens where the default Wordpress functionality was not enough. 
+    </p>
+    <p>
+      using native controls and integration into the original workflow Reboot editors could naturally add new content without extra visual and functional overhead.
+    </p>
+  </aside>
+</article>
+
+<article class="image desktop last">
+  <h3>theme development</h3>
+  
+  {% assign image_index = 4 %}
+  {% include responsive-images.html type='from post' link="" small='true' %}
+  
+  <aside>
+    <h3>theme development</h3>
+    <p>
+      the next step was to create a Wordpress theme to retrieve metadata and integrate into the design.
+    </p>
+    <p>
+      a semantic HTML5 template was created as a foundation for the upcoming front-end development phase.
+    </p>
+  </aside>
+</article>

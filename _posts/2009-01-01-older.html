@@ -1,5 +1,5 @@
 ---
-layout: older
+layout: portfolio
 title: Older projects
 type: older projects
 images:
@@ -20,7 +20,7 @@ images:
 {% for image in page.images %}
   <article>
     {% assign image_index = forloop.index0 %}
-    {% include responsive-images.html type='from post' link='' %}
+    {% include responsive-images.html type='from post' link='' small='true' %}
     
     <h1>
       {{ image.title }}
