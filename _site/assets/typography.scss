@@ -77,7 +77,7 @@ h1 {
 }
 
 @mixin extended-typographic-elements {
-  p + p, p + figure, ol + figure, figure + p, table + p {
+  p + p, p + figure, ol + figure, figure + p, table + p, p + ol, ol + p {
     margin-top: $gutter;
   }
   
