@@ -2,7 +2,7 @@
 require 'sass-globbing'
 
 # Set this to the root of your project when deployed:
-http_path = "/"
+http_path = "http://metamn.io/cs2/"
 css_dir = "assets"
 sass_dir = "assets"
 images_dir = "assets"
